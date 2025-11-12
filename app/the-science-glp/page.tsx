@@ -275,7 +275,7 @@ export default function ScienceGLP() {
                   <svg className="w-5 h-5 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <div>
+                  <div className="text-gray-800">
                     <span className="font-semibold">Nausea</span> - Most common, usually improves within 2-4 weeks
                   </div>
                 </li>
@@ -283,7 +283,7 @@ export default function ScienceGLP() {
                   <svg className="w-5 h-5 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <div>
+                  <div className="text-gray-800">
                     <span className="font-semibold">Digestive changes</span> - Diarrhea or constipation, typically temporary
                   </div>
                 </li>
@@ -291,7 +291,7 @@ export default function ScienceGLP() {
                   <svg className="w-5 h-5 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <div>
+                  <div className="text-gray-800">
                     <span className="font-semibold">Injection site reactions</span> - Mild redness or irritation
                   </div>
                 </li>
@@ -299,7 +299,7 @@ export default function ScienceGLP() {
                   <svg className="w-5 h-5 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <div>
+                  <div className="text-gray-800">
                     <span className="font-semibold">Reduced appetite</span> - Expected effect, not usually problematic
                   </div>
                 </li>
@@ -312,7 +312,7 @@ export default function ScienceGLP() {
                   <svg className="w-5 h-5 text-yellow-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                   </svg>
-                  <div>
+                  <div className="text-gray-800">
                     <span className="font-semibold">Pancreatitis</span> - Severe abdominal pain (seek immediate care)
                   </div>
                 </li>
@@ -320,7 +320,7 @@ export default function ScienceGLP() {
                   <svg className="w-5 h-5 text-yellow-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                   </svg>
-                  <div>
+                  <div className="text-gray-800">
                     <span className="font-semibold">Gallbladder problems</span> - Risk increases with rapid weight loss
                   </div>
                 </li>
@@ -328,7 +328,7 @@ export default function ScienceGLP() {
                   <svg className="w-5 h-5 text-yellow-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                   </svg>
-                  <div>
+                  <div className="text-gray-800">
                     <span className="font-semibold">Hypoglycemia</span> - Low blood sugar (especially with diabetes medications)
                   </div>
                 </li>
@@ -336,7 +336,7 @@ export default function ScienceGLP() {
                   <svg className="w-5 h-5 text-yellow-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                   </svg>
-                  <div>
+                  <div className="text-gray-800">
                     <span className="font-semibold">Thyroid tumors</span> - Boxed warning (theoretical risk, not confirmed in humans)
                   </div>
                 </li>
