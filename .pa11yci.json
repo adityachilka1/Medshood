@@ -1,0 +1,24 @@
+{
+  "defaults": {
+    "standard": "WCAG2AA",
+    "runners": ["axe"],
+    "timeout": 30000,
+    "wait": 1000,
+    "chromeLaunchConfig": {
+      "args": ["--no-sandbox", "--disable-setuid-sandbox"]
+    },
+    "hideElements": ".ad-banner, .cookie-notice",
+    "includeNotices": false,
+    "includeWarnings": true,
+    "threshold": 0
+  },
+  "urls": [
+    "http://localhost:3000",
+    "http://localhost:3000/quiz",
+    "http://localhost:3000/pricing",
+    "http://localhost:3000/weight-loss",
+    "http://localhost:3000/how-we-work",
+    "http://localhost:3000/the-science-glp",
+    "http://localhost:3000/faqs"
+  ]
+}
