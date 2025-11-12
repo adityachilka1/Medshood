@@ -333,7 +333,7 @@ export default function Home() {
                   
                   {/* Arrow for non-last items */}
                   {index < howItWorks.length - 1 && (
-                    <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 text-primary/30">
+                    <div className="hidden lg:block absolute top-[45%] -right-4 transform -translate-y-1/2 text-primary/30">
                       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                       </svg>
