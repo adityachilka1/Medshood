@@ -33,63 +33,63 @@ export default function Home() {
     {
       step: "01",
       title: "Search or Upload",
-      description: "Find your medicine by name or condition, or upload your prescription",
+      description: "Find your specialty medicine by name or therapeutic area, or upload your prescription",
       Icon: ClipboardIcon
     },
     {
       step: "02",
       title: "Pharmacist Verification",
-      description: "Our licensed pharmacists verify your prescription and medicine requirements",
+      description: "Our clinical pharmacists verify your prescription and handle prior authorization requirements",
       Icon: DoctorIcon
     },
     {
       step: "03",
       title: "Fast Delivery",
-      description: "Get authentic medicines delivered to your doorstep within 24-48 hours",
+      description: "Get authentic specialty medications with temperature-controlled cold chain delivery within 24-48 hours",
       Icon: PackageIcon
     },
     {
       step: "04",
       title: "Expert Support",
-      description: "Access ongoing support from our team of licensed pharmacists anytime",
+      description: "Access 24/7 clinical support from our team of specialty-trained pharmacists",
       Icon: SupportIcon
     }
   ];
 
   const benefits = [
     {
-      title: "Authentic Medicines",
-      description: "100% genuine medications sourced directly from licensed manufacturers",
+      title: "Specialty Medications",
+      description: "Rare disease biologics, oncology drugs, and complex therapies sourced from licensed manufacturers",
       Icon: CheckmarkBadgeIcon,
       color: "from-blue-500 to-blue-600"
     },
     {
-      title: "Licensed Pharmacists",
-      description: "Expert guidance from qualified pharmacists for all your health needs",
+      title: "Clinical Pharmacist Team",
+      description: "Specialty-trained clinical pharmacists providing expert therapy management and patient support",
       Icon: MedicalCrossIcon,
       color: "from-green-500 to-green-600"
     },
     {
-      title: "Fast Delivery",
-      description: "24-48 hour delivery to your doorstep with secure packaging",
+      title: "Cold Chain Delivery",
+      description: "Temperature-controlled logistics (2-8°C) ensuring medication integrity from warehouse to doorstep",
       Icon: HomeDeliveryIcon,
       color: "from-purple-500 to-purple-600"
     },
     {
-      title: "Best Prices",
-      description: "Up to 70% savings on specialty and chronic disease medications",
+      title: "Prior Authorization",
+      description: "Complete insurance and prior authorization assistance for specialty medication coverage",
       Icon: TargetIcon,
       color: "from-orange-500 to-orange-600"
     },
     {
       title: "Secure & Private",
-      description: "Your health information is encrypted and completely confidential",
+      description: "HIPAA-compliant data encryption and complete confidentiality for all health information",
       Icon: UnlockIcon,
       color: "from-pink-500 to-pink-600"
     },
     {
-      title: "Easy Returns",
-      description: "Hassle-free returns and refunds if medicines don't meet quality standards",
+      title: "Patient Support Programs",
+      description: "Financial assistance, adherence monitoring, and comprehensive disease state management programs",
       Icon: MoneyBackIcon,
       color: "from-teal-500 to-teal-600"
     }
@@ -121,19 +121,19 @@ export default function Home() {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
                 </span>
-                Licensed Online Pharmacy
+                Super Specialty Pharmacy
               </div>
 
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-                India's Trusted{" "}
+                India's Leading{" "}
                 <span className="relative inline-block">
-                  <span className="relative z-10">Online Pharmacy</span>
+                  <span className="relative z-10">Super Specialty Pharmacy</span>
                   <span className="absolute bottom-2 left-0 w-full h-3 bg-yellow-400/30 -rotate-1"></span>
                 </span>
               </h1>
 
               <p className="text-xl md:text-2xl mb-8 text-white leading-relaxed opacity-95">
-                Authentic specialty & chronic disease medications with up to 70% savings, expert pharmacist support, and 24-48 hour doorstep delivery.
+                Specialized medications for rare diseases, oncology, rheumatology, and complex conditions. Expert clinical support, cold chain delivery, and prior authorization assistance.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4">
@@ -166,19 +166,19 @@ export default function Home() {
                   <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  Authentic Medicines
+                  Cold Chain Delivery
                 </div>
                 <div className="flex items-center gap-2">
                   <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  Up to 70% Savings
+                  Prior Authorization Support
                 </div>
                 <div className="flex items-center gap-2">
                   <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  Licensed Pharmacists
+                  Clinical Pharmacist Team
                 </div>
               </div>
             </div>
@@ -189,18 +189,18 @@ export default function Home() {
                 {/* Main Card */}
                 <div className="glass p-8 rounded-3xl backdrop-blur-lg border-2 border-white/20 shadow-2xl">
                   <div className="text-center">
-                    <div className="text-7xl font-bold mb-4 animate-pulse-subtle">5,000+</div>
-                    <div className="text-2xl font-semibold mb-2">Medicines Available</div>
-                    <div className="text-blue-200">Authentic & Quality Assured</div>
+                    <div className="text-7xl font-bold mb-4 animate-pulse-subtle">500+</div>
+                    <div className="text-2xl font-semibold mb-2">Specialty Medications</div>
+                    <div className="text-blue-200">Rare Disease & Complex Therapies</div>
 
                     <div className="grid grid-cols-2 gap-4 mt-8">
                       <div className="bg-white/10 p-4 rounded-xl">
-                        <div className="text-3xl font-bold">70%</div>
-                        <div className="text-sm text-blue-200">Max Savings</div>
+                        <div className="text-3xl font-bold">24/7</div>
+                        <div className="text-sm text-blue-200">Clinical Support</div>
                       </div>
                       <div className="bg-white/10 p-4 rounded-xl">
-                        <div className="text-3xl font-bold">24-48hr</div>
-                        <div className="text-sm text-blue-200">Delivery</div>
+                        <div className="text-3xl font-bold">2-8°C</div>
+                        <div className="text-sm text-blue-200">Cold Chain</div>
                       </div>
                     </div>
                   </div>
@@ -208,10 +208,10 @@ export default function Home() {
 
                 {/* Floating Elements */}
                 <div className="absolute -top-6 -right-6 bg-yellow-400 text-primary px-4 py-2 rounded-full font-bold shadow-lg animate-float" style={{animationDelay: '0.5s'}}>
-                  Licensed Pharmacy ✓
+                  Specialty Pharmacy ✓
                 </div>
                 <div className="absolute -bottom-6 -left-6 bg-green-400 text-primary px-4 py-2 rounded-full font-bold shadow-lg animate-float" style={{animationDelay: '1s'}}>
-                  98% Satisfaction
+                  Clinical Excellence
                 </div>
               </div>
             </div>
@@ -243,13 +243,13 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-4">
-              BROWSE BY CONDITION
+              SPECIALTY THERAPEUTIC AREAS
             </div>
             <h2 className="text-5xl font-bold mb-6">
-              <span className="gradient-text">Shop by Medical Condition</span>
+              <span className="gradient-text">Browse by Therapeutic Area</span>
             </h2>
             <p className="text-xl text-gray-800 max-w-3xl mx-auto">
-              Find authentic specialty and chronic disease medications for your specific health needs
+              Access specialty medications for oncology, rheumatology, rare diseases, and complex chronic conditions
             </p>
           </div>
 

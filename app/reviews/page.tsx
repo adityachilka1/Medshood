@@ -8,54 +8,54 @@ export default function Reviews() {
       name: "Priya M.",
       age: 34,
       location: "Mumbai",
-      weightLoss: "18 kg in 10 months",
+      condition: "Rheumatoid Arthritis",
       rating: 5,
-      review: "Medshood changed my life. After trying every diet and exercise programme, I finally found something that works. The GLP-1 medication combined with the coaching made all the difference. I've lost 18kg and feel healthier than ever!",
+      review: "Medshood's specialty pharmacy service has been life-changing. Managing my RA with biologic therapy was expensive and complex, but their clinical team handled all my prior authorizations and insurance coordination. The cold chain delivery ensures my medication arrives safely every time.",
       beforeAfter: true
     },
     {
       name: "Rahul S.",
       age: 42,
       location: "Delhi",
-      weightLoss: "22 kg in 12 months",
+      condition: "Multiple Sclerosis",
       rating: 5,
-      review: "As someone with diabetes, losing weight was crucial for my health. My doctor at Medshood was fantastic - very supportive and knowledgeable. Not only did I lose weight, but my blood sugar is now well-controlled. Worth every rupee!",
+      review: "As someone with MS, access to disease-modifying therapies is critical. Medshood's clinical pharmacists are incredible - they help me understand my treatment, monitor for side effects, and coordinate with my neurologist. The 24/7 support gives me peace of mind.",
       beforeAfter: true
     },
     {
       name: "Anjali K.",
       age: 29,
       location: "Bangalore",
-      weightLoss: "15 kg in 8 months",
+      condition: "Crohn's Disease",
       rating: 5,
-      review: "I was skeptical about online weight loss programmes, but Medshood exceeded all expectations. The convenience of telehealth consultations, medication delivery, and 24/7 support made it so easy to stick with. Highly recommend!",
+      review: "I was struggling to get my IBD medications covered by insurance. Medshood's prior authorization team handled everything - from documentation to appeals. Now I receive my biologic infusion medications on time, every time. The clinical support is exceptional!",
       beforeAfter: false
     },
     {
       name: "Vikram P.",
       age: 38,
       location: "Hyderabad",
-      weightLoss: "20 kg in 11 months",
+      condition: "Hemophilia A",
       rating: 5,
-      review: "The medication worked exactly as promised. I had minimal side effects and the appetite suppression was remarkable. Combined with the meal plans they provided, weight loss became effortless. Best decision I've made for my health.",
+      review: "Finding factor replacement therapy was always challenging until I found Medshood. They maintain perfect cold chain delivery and their specialty pharmacists understand bleeding disorders. The patient assistance program helped make my treatment affordable.",
       beforeAfter: true
     },
     {
       name: "Sneha R.",
       age: 31,
       location: "Chennai",
-      weightLoss: "16 kg in 9 months",
+      condition: "Psoriatic Arthritis",
       rating: 5,
-      review: "What I love most is the holistic approach. It's not just medication - they help with nutrition, exercise, and mental health. The support team is amazing and always available when I have questions. Couldn't have done it without them!",
+      review: "The clinical pharmacist team at Medshood is outstanding. They helped me transition to a new biologic, monitored my response, and coordinated with my rheumatologist. Temperature-controlled delivery ensures medication efficacy. Couldn't ask for better specialty pharmacy care!",
       beforeAfter: false
     },
     {
       name: "Arjun T.",
       age: 45,
       location: "Pune",
-      weightLoss: "25 kg in 13 months",
+      condition: "Metastatic Cancer",
       rating: 5,
-      review: "After struggling with my weight for 20 years, I finally found a solution that works. The doctors are professional, the process is straightforward, and most importantly - it works! My energy levels are through the roof now.",
+      review: "During my cancer treatment, Medshood provided essential support. From targeted therapy medications to supportive care, everything arrived on time with proper handling. The clinical team's knowledge of oncology medications and side effect management has been invaluable.",
       beforeAfter: true
     }
   ];
@@ -75,10 +75,10 @@ export default function Reviews() {
       <section className="relative bg-gradient-to-br from-primary to-secondary text-white py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-            Real people. Real results.
+            Real patients. Real specialty care.
           </h1>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-            Read success stories from thousands of members who've transformed their lives with Medshood's medical weight loss programme.
+            Read success stories from patients managing rare diseases and complex conditions with Medshood's specialty pharmacy services.
           </p>
         </div>
       </section>
@@ -101,9 +101,9 @@ export default function Reviews() {
       <section className="py-20 bg-novo-gray">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-primary mb-4">Success Stories</h2>
+            <h2 className="text-4xl font-bold text-primary mb-4">Patient Success Stories</h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              Discover how Medshood has helped people across India achieve their weight loss goals
+              Discover how Medshood's specialty pharmacy services help patients across India manage complex medical conditions
             </p>
           </div>
 
@@ -119,9 +119,9 @@ export default function Reviews() {
                   ))}
                 </div>
 
-                {/* Weight Loss Badge */}
-                <div className="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold mb-4">
-                  Lost {review.weightLoss}
+                {/* Condition Badge */}
+                <div className="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold mb-4">
+                  {review.condition}
                 </div>
 
                 {/* Review Text */}
@@ -146,7 +146,7 @@ export default function Reviews() {
 
           <div className="text-center mt-12">
             <p className="text-gray-600 mb-4">
-              All reviews are from verified Medshood members. Individual results may vary.
+              All reviews are from verified Medshood patients. Individual treatment outcomes may vary. Always consult your healthcare provider.
             </p>
           </div>
         </div>
@@ -179,15 +179,15 @@ export default function Reviews() {
       {/* CTA Section */}
       <section className="py-20 bg-primary text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6">Ready to write your success story?</h2>
+          <h2 className="text-4xl font-bold mb-6">Get specialty pharmacy support for your condition</h2>
           <p className="text-xl mb-8 text-blue-100">
-            Join thousands of satisfied members who've achieved their weight loss goals with Medshood
+            Join patients across India who trust Medshood for rare disease and complex specialty medications
           </p>
-          <Link 
-            href="/quiz" 
+          <Link
+            href="/upload-prescription"
             className="inline-block bg-white text-primary px-8 py-4 rounded-md font-semibold hover:bg-gray-100 transition text-lg"
           >
-            Check Your Eligibility
+            Upload Your Prescription
           </Link>
         </div>
       </section>
