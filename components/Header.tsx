@@ -17,23 +17,23 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/weight-loss" className="text-gray-700 hover:text-primary transition">
-              Weight Loss Programme
+            <Link href="/categories" className="text-gray-700 hover:text-primary transition">
+              Therapeutic Areas
             </Link>
-            <Link href="/how-we-work" className="text-gray-700 hover:text-primary transition">
-              How We Work
-            </Link>
-            <Link href="/the-science-glp" className="text-gray-700 hover:text-primary transition">
+            <Link href="/specialty-biologics" className="text-gray-700 hover:text-primary transition">
               The Science
+            </Link>
+            <Link href="/reviews" className="text-gray-700 hover:text-primary transition">
+              Patient Stories
             </Link>
             <Link href="/faqs" className="text-gray-700 hover:text-primary transition">
               FAQs
             </Link>
-            <Link 
-              href="/quiz" 
+            <Link
+              href="/upload-prescription"
               className="bg-primary text-white px-6 py-2 rounded-md font-semibold hover:bg-secondary transition"
             >
-              Check Eligibility
+              Upload Prescription
             </Link>
           </div>
 
@@ -55,40 +55,40 @@ export default function Header() {
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="md:hidden py-4 space-y-4">
-            <Link 
-              href="/weight-loss" 
+            <Link
+              href="/categories"
               className="block text-gray-700 hover:text-primary transition"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Weight Loss Programme
+              Therapeutic Areas
             </Link>
-            <Link 
-              href="/how-we-work" 
-              className="block text-gray-700 hover:text-primary transition"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              How We Work
-            </Link>
-            <Link 
-              href="/the-science-glp" 
+            <Link
+              href="/specialty-biologics"
               className="block text-gray-700 hover:text-primary transition"
               onClick={() => setMobileMenuOpen(false)}
             >
               The Science
             </Link>
-            <Link 
-              href="/faqs" 
+            <Link
+              href="/reviews"
+              className="block text-gray-700 hover:text-primary transition"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Patient Stories
+            </Link>
+            <Link
+              href="/faqs"
               className="block text-gray-700 hover:text-primary transition"
               onClick={() => setMobileMenuOpen(false)}
             >
               FAQs
             </Link>
-            <Link 
-              href="/quiz" 
+            <Link
+              href="/upload-prescription"
               className="block bg-primary text-white px-6 py-2 rounded-md font-semibold hover:bg-secondary transition text-center"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Check Eligibility
+              Upload Prescription
             </Link>
           </div>
         )}

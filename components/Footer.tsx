@@ -9,18 +9,18 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">Medshood</h3>
             <p className="text-gray-400">
-              Medical weight loss programme with GLP-1 treatments, doctor consultations, and ongoing support.
+              India's leading super specialty pharmacy providing biologic therapies, rare disease medications, and clinical support for complex conditions.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-semibold mb-4">Programme</h4>
+            <h4 className="font-semibold mb-4">Pharmacy Services</h4>
             <ul className="space-y-2 text-gray-400">
-              <li><Link href="/weight-loss" className="hover:text-white transition">Weight Loss</Link></li>
-              <li><Link href="/how-we-work" className="hover:text-white transition">How We Work</Link></li>
-              <li><Link href="/the-science-glp" className="hover:text-white transition">The Science</Link></li>
-              <li><Link href="/pricing" className="hover:text-white transition">Pricing</Link></li>
+              <li><Link href="/categories" className="hover:text-white transition">Therapeutic Areas</Link></li>
+              <li><Link href="/specialty-biologics" className="hover:text-white transition">The Science</Link></li>
+              <li><Link href="/upload-prescription" className="hover:text-white transition">Upload Prescription</Link></li>
+              <li><Link href="/patient-assistance" className="hover:text-white transition">Patient Assistance</Link></li>
             </ul>
           </div>
 
@@ -50,7 +50,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
           <p>&copy; {new Date().getFullYear()} Medshood. All rights reserved.</p>
           <p className="mt-2 text-sm">
-            Medshood is a telehealth platform. Always consult with your healthcare provider before starting any treatment.
+            Medshood is a specialty pharmacy platform. All medications require a valid prescription. Always consult with your healthcare provider before starting any specialty medication.
           </p>
         </div>
       </div>
