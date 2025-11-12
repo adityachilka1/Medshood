@@ -2,65 +2,65 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 
-export default function ScienceGLP() {
+export default function SpecialtyBiologics() {
   const studies = [
     {
-      title: "STEP Clinical Trials (Semaglutide)",
-      results: "15.3% average weight loss",
-      participants: "4,500+ participants",
-      duration: "68 weeks",
-      findings: "Participants on semaglutide lost an average of 15.3% of their body weight compared to 2.6% with placebo. 86% of participants lost at least 5% of body weight."
+      title: "ACR20 Response in RA (Adalimumab)",
+      results: "59-65% response rate",
+      participants: "3,000+ patients",
+      duration: "24 weeks",
+      findings: "Patients treated with adalimumab achieved significant improvement in ACR20 response compared to placebo. Disease activity scores showed sustained reduction with combination methotrexate therapy."
     },
     {
-      title: "SURMOUNT Studies (Tirzepatide)",
-      results: "22.5% average weight loss",
-      participants: "2,500+ participants",
-      duration: "72 weeks",
-      findings: "Tirzepatide demonstrated superior efficacy with up to 22.5% weight loss at the highest dose. 91% of participants achieved at least 5% weight loss."
+      title: "PRISM Study (Ankylosing Spondylitis)",
+      results: "61% ASAS20 response",
+      participants: "1,200+ patients",
+      duration: "12 weeks",
+      findings: "TNF inhibitor therapy demonstrated rapid onset with significant improvement in spinal mobility, pain scores, and inflammatory markers within 2 weeks of treatment initiation."
     },
     {
-      title: "SELECT Cardiovascular Study",
-      results: "20% reduction in major adverse cardiovascular events",
-      participants: "17,600+ participants",
-      duration: "3.5 years",
-      findings: "Semaglutide reduced risk of heart attack, stroke, and cardiovascular death by 20% in people with obesity and established cardiovascular disease."
+      title: "UNITI Clinical Program (Crohn's Disease)",
+      results: "Clinical remission in 53%",
+      participants: "1,400+ patients",
+      duration: "44 weeks",
+      findings: "Ustekinumab showed sustained clinical remission and mucosal healing in moderate-to-severe Crohn's disease patients who failed conventional therapy and anti-TNF agents."
     }
   ];
 
   const mechanisms = [
     {
-      title: "Appetite Regulation",
-      description: "GLP-1 receptors in the brain's appetite centers reduce hunger signals and increase feelings of fullness (satiety)",
+      title: "TNF-α Inhibition",
+      description: "Blocks tumor necrosis factor-alpha, a key inflammatory cytokine driving joint destruction and systemic inflammation in autoimmune diseases",
       icon: (
         <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
         </svg>
       )
     },
     {
-      title: "Slowed Gastric Emptying",
-      description: "Delays food movement from stomach to intestines, prolonging feelings of fullness and reducing meal frequency",
+      title: "IL-17 Targeting",
+      description: "Neutralizes interleukin-17, a critical cytokine in psoriatic disease pathophysiology and inflammatory cascade amplification",
       icon: (
         <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
         </svg>
       )
     },
     {
-      title: "Blood Sugar Control",
-      description: "Enhances insulin secretion when blood sugar is elevated and reduces excessive glucagon production",
+      title: "IL-12/23 Blockade",
+      description: "Inhibits interleukin-12 and 23 pathways, preventing T-cell activation and reducing inflammatory bowel disease severity",
       icon: (
         <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
         </svg>
       )
     },
     {
-      title: "Reduced Food Cravings",
-      description: "Affects reward pathways in the brain, decreasing cravings for high-calorie and high-fat foods",
+      title: "JAK Pathway Inhibition",
+      description: "Targets intracellular JAK-STAT signaling, blocking multiple cytokine pathways simultaneously for broad immunomodulation",
       icon: (
         <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
         </svg>
       )
     }
@@ -68,34 +68,67 @@ export default function ScienceGLP() {
 
   const benefits = [
     {
-      metric: "Weight Loss",
-      value: "15-22%",
-      description: "Average body weight reduction in 12 months"
+      metric: "Disease Remission",
+      value: "50-70%",
+      description: "Clinical remission rates in rheumatoid arthritis"
     },
     {
-      metric: "HbA1c Reduction",
-      value: "1.5-2.0%",
-      description: "Improvement in blood sugar control"
+      metric: "Radiographic Progression",
+      value: "80%",
+      description: "Reduction in joint damage progression"
     },
     {
-      metric: "Blood Pressure",
-      value: "3-5 mmHg",
-      description: "Average systolic BP reduction"
+      metric: "Quality of Life",
+      value: "60-75%",
+      description: "Improvement in physical function scores"
     },
     {
-      metric: "Cardiovascular Risk",
-      value: "20%",
-      description: "Reduction in major adverse events"
+      metric: "Mucosal Healing",
+      value: "40-50%",
+      description: "Endoscopic remission in IBD patients"
     },
     {
-      metric: "Cholesterol",
-      value: "10-15%",
-      description: "Improvement in lipid profile"
+      metric: "PASI-90 Response",
+      value: "70-80%",
+      description: "Psoriasis Area Severity Index improvement"
     },
     {
-      metric: "Liver Health",
-      value: "30-40%",
-      description: "Reduction in fatty liver disease markers"
+      metric: "Work Productivity",
+      value: "45%",
+      description: "Reduction in work disability"
+    }
+  ];
+
+  const biologicClasses = [
+    {
+      class: "TNF Inhibitors",
+      medications: "Adalimumab, Etanercept, Infliximab, Golimumab, Certolizumab",
+      indications: "RA, PsA, AS, Crohn's, UC, Psoriasis"
+    },
+    {
+      class: "IL-17 Inhibitors",
+      medications: "Secukinumab, Ixekizumab, Brodalumab",
+      indications: "Psoriatic Arthritis, Ankylosing Spondylitis, Plaque Psoriasis"
+    },
+    {
+      class: "IL-12/23 Inhibitors",
+      medications: "Ustekinumab, Risankizumab, Guselkumab",
+      indications: "Crohn's Disease, Psoriasis, Psoriatic Arthritis"
+    },
+    {
+      class: "IL-6 Inhibitors",
+      medications: "Tocilizumab, Sarilumab",
+      indications: "Rheumatoid Arthritis, Giant Cell Arteritis"
+    },
+    {
+      class: "JAK Inhibitors",
+      medications: "Tofacitinib, Baricitinib, Upadacitinib",
+      indications: "Rheumatoid Arthritis, Psoriatic Arthritis, Ulcerative Colitis"
+    },
+    {
+      class: "B-Cell Depletion",
+      medications: "Rituximab, Ocrelizumab",
+      indications: "Rheumatoid Arthritis, MS, Vasculitis"
     }
   ];
 
@@ -108,36 +141,36 @@ export default function ScienceGLP() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-              The science behind GLP-1 medications
+              The science behind specialty biologic therapies
             </h1>
             <p className="text-xl mb-8 text-blue-100">
-              Discover how GLP-1 receptor agonists work to help you achieve sustainable weight loss, backed by extensive clinical research and real-world results.
+              Discover how targeted biologic medications revolutionize treatment for rheumatoid arthritis, inflammatory bowel disease, psoriasis, and other autoimmune conditions with precision immunomodulation.
             </p>
-            <Link 
-              href="/quiz" 
+            <Link
+              href="/upload-prescription"
               className="inline-block bg-white text-primary px-8 py-4 rounded-md font-semibold hover:bg-gray-100 transition text-lg"
             >
-              Check Your Eligibility
+              Upload Your Prescription
             </Link>
           </div>
         </div>
       </section>
 
-      {/* What is GLP-1 */}
+      {/* What are Biologics */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-primary mb-6">What is GLP-1?</h2>
+              <h2 className="text-4xl font-bold text-primary mb-6">What are biologic therapies?</h2>
               <div className="space-y-4 text-gray-700">
                 <p>
-                  GLP-1 (Glucagon-Like Peptide-1) is a natural hormone produced in your intestines after eating. It plays a crucial role in regulating appetite, blood sugar, and digestion.
+                  Biologic medications are engineered proteins derived from living cells that target specific components of the immune system. Unlike conventional immunosuppressants, biologics precisely modulate inflammatory pathways with reduced systemic toxicity.
                 </p>
                 <p>
-                  GLP-1 medications are synthetic versions that mimic this hormone but last much longer in your body. While natural GLP-1 breaks down within minutes, these medications can work for up to a week, providing sustained appetite control and metabolic benefits.
+                  These therapies work by neutralizing pro-inflammatory cytokines (TNF-α, IL-17, IL-12/23), depleting pathogenic B-cells, or inhibiting intracellular signaling cascades (JAK-STAT pathway). This precision targeting achieves disease remission while preserving overall immune function.
                 </p>
                 <p>
-                  Originally developed for type 2 diabetes in the early 2000s, researchers discovered that GLP-1 medications also caused significant weight loss. This led to FDA approval specifically for obesity treatment.
+                  Developed through recombinant DNA technology and monoclonal antibody engineering, biologics represent the pinnacle of modern immunology-based therapeutics for autoimmune and inflammatory diseases.
                 </p>
               </div>
             </div>
@@ -148,28 +181,28 @@ export default function ScienceGLP() {
                   <div className="w-3 h-3 bg-primary rounded-full mt-1.5 mr-3 flex-shrink-0"></div>
                   <div>
                     <div className="font-semibold text-gray-900">FDA Approved</div>
-                    <div className="text-sm text-gray-600">Approved for weight management since 2021</div>
+                    <div className="text-sm text-gray-600">Rigorous regulatory approval for multiple autoimmune indications</div>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <div className="w-3 h-3 bg-primary rounded-full mt-1.5 mr-3 flex-shrink-0"></div>
                   <div>
                     <div className="font-semibold text-gray-900">Extensively Studied</div>
-                    <div className="text-sm text-gray-600">Over 25,000 participants in clinical trials</div>
+                    <div className="text-sm text-gray-600">Decades of clinical trials with over 100,000 patient-years of safety data</div>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <div className="w-3 h-3 bg-primary rounded-full mt-1.5 mr-3 flex-shrink-0"></div>
                   <div>
-                    <div className="font-semibold text-gray-900">Multiple Benefits</div>
-                    <div className="text-sm text-gray-600">Weight loss plus improved cardiovascular and metabolic health</div>
+                    <div className="font-semibold text-gray-900">Disease-Modifying</div>
+                    <div className="text-sm text-gray-600">Prevents irreversible joint damage and organ complications</div>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <div className="w-3 h-3 bg-primary rounded-full mt-1.5 mr-3 flex-shrink-0"></div>
                   <div>
-                    <div className="font-semibold text-gray-900">Safe & Well-Tolerated</div>
-                    <div className="text-sm text-gray-600">Most side effects are mild and temporary</div>
+                    <div className="font-semibold text-gray-900">Cold Chain Required</div>
+                    <div className="text-sm text-gray-600">Temperature-controlled storage (2-8°C) to maintain protein stability</div>
                   </div>
                 </div>
               </div>
@@ -178,13 +211,13 @@ export default function ScienceGLP() {
         </div>
       </section>
 
-      {/* How It Works */}
+      {/* How They Work */}
       <section className="py-20 bg-novo-gray">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-primary mb-4">How GLP-1 medications work</h2>
+            <h2 className="text-4xl font-bold text-primary mb-4">Mechanisms of action</h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              GLP-1 medications work through multiple pathways to help you lose weight naturally
+              Biologics work through targeted immunomodulation at the molecular level
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -201,18 +234,47 @@ export default function ScienceGLP() {
         </div>
       </section>
 
-      {/* Clinical Studies */}
+      {/* Biologic Classes */}
       <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-primary mb-4">Biologic medication classes</h2>
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+              Different therapeutic targets for various autoimmune conditions
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {biologicClasses.map((biologic, index) => (
+              <div key={index} className="bg-novo-gray p-6 rounded-lg border-l-4 border-primary">
+                <h3 className="text-xl font-bold text-primary mb-3">{biologic.class}</h3>
+                <div className="space-y-2">
+                  <div>
+                    <div className="text-sm font-semibold text-gray-900">Medications:</div>
+                    <div className="text-sm text-gray-700">{biologic.medications}</div>
+                  </div>
+                  <div>
+                    <div className="text-sm font-semibold text-gray-900">Indications:</div>
+                    <div className="text-sm text-gray-700">{biologic.indications}</div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Clinical Studies */}
+      <section className="py-20 bg-novo-gray">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-primary mb-4">Clinical evidence</h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              Backed by robust clinical trials demonstrating safety and efficacy
+              Robust clinical trials demonstrating efficacy and safety across autoimmune conditions
             </p>
           </div>
           <div className="space-y-8">
             {studies.map((study, index) => (
-              <div key={index} className="bg-novo-gray p-8 rounded-lg">
+              <div key={index} className="bg-white p-8 rounded-lg">
                 <div className="grid md:grid-cols-4 gap-6 mb-6">
                   <div>
                     <h3 className="text-2xl font-bold text-primary mb-2">{study.title}</h3>
@@ -237,18 +299,18 @@ export default function ScienceGLP() {
         </div>
       </section>
 
-      {/* Health Benefits */}
-      <section className="py-20 bg-novo-gray">
+      {/* Clinical Benefits */}
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-primary mb-4">Beyond weight loss</h2>
+            <h2 className="text-4xl font-bold text-primary mb-4">Clinical outcomes</h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              GLP-1 medications provide multiple health benefits backed by clinical data
+              Biologic therapies provide transformative outcomes backed by clinical data
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {benefits.map((benefit, index) => (
-              <div key={index} className="bg-white p-8 rounded-lg text-center">
+              <div key={index} className="bg-novo-gray p-8 rounded-lg text-center">
                 <div className="text-4xl font-bold text-primary mb-3">{benefit.value}</div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{benefit.metric}</h3>
                 <p className="text-gray-600 text-sm">{benefit.description}</p>
@@ -259,24 +321,24 @@ export default function ScienceGLP() {
       </section>
 
       {/* Safety */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-novo-gray">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-primary mb-4">Safety & side effects</h2>
+            <h2 className="text-4xl font-bold text-primary mb-4">Safety & monitoring</h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              Understanding what to expect during treatment
+              Understanding risks and clinical monitoring protocols
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-green-50 border-2 border-green-200 p-8 rounded-lg">
-              <h3 className="text-2xl font-bold text-green-900 mb-4">Common (Usually Mild)</h3>
+              <h3 className="text-2xl font-bold text-green-900 mb-4">Common Manageable Risks</h3>
               <ul className="space-y-3">
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                   <div className="text-gray-800">
-                    <span className="font-semibold">Nausea</span> - Most common, usually improves within 2-4 weeks
+                    <span className="font-semibold">Injection site reactions</span> - Local erythema, mild discomfort (usually resolves within 3-5 days)
                   </div>
                 </li>
                 <li className="flex items-start">
@@ -284,7 +346,7 @@ export default function ScienceGLP() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                   <div className="text-gray-800">
-                    <span className="font-semibold">Digestive changes</span> - Diarrhea or constipation, typically temporary
+                    <span className="font-semibold">Upper respiratory infections</span> - Increased susceptibility, typically mild
                   </div>
                 </li>
                 <li className="flex items-start">
@@ -292,7 +354,7 @@ export default function ScienceGLP() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                   <div className="text-gray-800">
-                    <span className="font-semibold">Injection site reactions</span> - Mild redness or irritation
+                    <span className="font-semibold">Infusion reactions</span> - Managed with premedication protocols
                   </div>
                 </li>
                 <li className="flex items-start">
@@ -300,20 +362,20 @@ export default function ScienceGLP() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                   <div className="text-gray-800">
-                    <span className="font-semibold">Reduced appetite</span> - Expected effect, not usually problematic
+                    <span className="font-semibold">Mild laboratory abnormalities</span> - Monitored through routine blood work
                   </div>
                 </li>
               </ul>
             </div>
             <div className="bg-yellow-50 border-2 border-yellow-200 p-8 rounded-lg">
-              <h3 className="text-2xl font-bold text-yellow-900 mb-4">Rare but Serious</h3>
+              <h3 className="text-2xl font-bold text-yellow-900 mb-4">Serious Risks Requiring Monitoring</h3>
               <ul className="space-y-3">
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-yellow-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                   </svg>
                   <div className="text-gray-800">
-                    <span className="font-semibold">Pancreatitis</span> - Severe abdominal pain (seek immediate care)
+                    <span className="font-semibold">Serious infections</span> - TB screening required; monitor for opportunistic infections
                   </div>
                 </li>
                 <li className="flex items-start">
@@ -321,7 +383,7 @@ export default function ScienceGLP() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                   </svg>
                   <div className="text-gray-800">
-                    <span className="font-semibold">Gallbladder problems</span> - Risk increases with rapid weight loss
+                    <span className="font-semibold">Hepatitis B reactivation</span> - Screening and prophylaxis for at-risk patients
                   </div>
                 </li>
                 <li className="flex items-start">
@@ -329,7 +391,7 @@ export default function ScienceGLP() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                   </svg>
                   <div className="text-gray-800">
-                    <span className="font-semibold">Hypoglycemia</span> - Low blood sugar (especially with diabetes medications)
+                    <span className="font-semibold">Malignancy risk</span> - Long-term surveillance for lymphoma and solid tumors
                   </div>
                 </li>
                 <li className="flex items-start">
@@ -337,7 +399,7 @@ export default function ScienceGLP() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                   </svg>
                   <div className="text-gray-800">
-                    <span className="font-semibold">Thyroid tumors</span> - Boxed warning (theoretical risk, not confirmed in humans)
+                    <span className="font-semibold">Cardiovascular events</span> - Risk assessment for JAK inhibitors (black box warning)
                   </div>
                 </li>
               </ul>
@@ -345,7 +407,7 @@ export default function ScienceGLP() {
           </div>
           <div className="mt-8 bg-blue-50 border border-blue-200 rounded-lg p-6">
             <p className="text-gray-700 text-center">
-              <strong>Medical Supervision:</strong> Your doctor will monitor you throughout treatment and adjust your plan as needed to minimize side effects while maximizing benefits.
+              <strong>Clinical Monitoring Protocol:</strong> Regular laboratory monitoring including CBC, liver function, lipid panel, and infection screening ensures early detection and management of potential adverse effects.
             </p>
           </div>
         </div>
@@ -354,22 +416,22 @@ export default function ScienceGLP() {
       {/* CTA Section */}
       <section className="py-20 bg-primary text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6">Experience the science-backed solution</h2>
+          <h2 className="text-4xl font-bold mb-6">Access specialty biologic therapies</h2>
           <p className="text-xl mb-8 text-blue-100">
-            Join thousands who have transformed their lives with GLP-1 medications and medical support
+            Expert clinical support, cold chain delivery, and prior authorization assistance for your specialty medication
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link 
-              href="/quiz" 
+            <Link
+              href="/upload-prescription"
               className="bg-white text-primary px-8 py-4 rounded-md font-semibold hover:bg-gray-100 transition text-lg"
             >
-              Check Your Eligibility
+              Upload Your Prescription
             </Link>
-            <Link 
-              href="/how-we-work" 
+            <Link
+              href="/reviews"
               className="border-2 border-white text-white px-8 py-4 rounded-md font-semibold hover:bg-white hover:text-primary transition text-lg"
             >
-              Learn How It Works
+              Read Patient Stories
             </Link>
           </div>
         </div>
