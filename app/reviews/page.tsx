@@ -133,7 +133,7 @@ export default function Reviews() {
                   <div className="text-sm text-gray-600">{review.location}</div>
                 </div>
 
-                {beforeAfter && review.beforeAfter && (
+                {review.beforeAfter && (
                   <div className="mt-4">
                     <div className="bg-novo-gray p-3 rounded text-center">
                       <div className="text-sm font-semibold text-primary">Before & After Available</div>
