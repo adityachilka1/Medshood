@@ -120,11 +120,11 @@ export default function UploadPrescriptionPage() {
         {/* Upload Step */}
         {uploadStep === 'upload' && (
           <div className="animate-fade-in-up">
-            <div className="text-center mb-8">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+            <div className="text-center mb-6 md:mb-8">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 leading-tight">
                 <span className="gradient-text">Upload Your Prescription</span>
               </h1>
-              <p className="text-xl text-gray-900">
+              <p className="text-base sm:text-lg md:text-xl text-gray-900 px-4">
                 Our licensed pharmacists will verify and process your prescription within 2 hours
               </p>
             </div>

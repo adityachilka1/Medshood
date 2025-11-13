@@ -523,17 +523,17 @@ export default function DiabetesEndocrineCarePage() {
       <Header />
       <main className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-br from-primary to-primary-dark text-white py-20">
+        <section className="relative bg-gradient-to-br from-primary to-primary-dark text-white py-12 md:py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <div className="flex items-center justify-center gap-2 mb-4">
-                <Activity className="w-8 h-8" />
-                <span className="text-lg font-semibold">Diabetes & Endocrine Care</span>
+                <Activity className="w-6 h-6 md:w-8 md:h-8" />
+                <span className="text-base md:text-lg font-semibold">Diabetes & Endocrine Care</span>
               </div>
-              <h1 className="text-5xl md:text-6xl font-bold mb-6">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6">
                 Comprehensive Diabetes Management
               </h1>
-              <p className="text-xl md:text-2xl mb-8 leading-relaxed max-w-3xl mx-auto">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 md:mb-8 leading-relaxed max-w-3xl mx-auto">
                 Injectable insulins, GLP-1 agonists, SGLT2 inhibitors, oral medications, and continuous glucose monitoring supplies for optimal diabetes control
               </p>
               <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
@@ -556,9 +556,9 @@ export default function DiabetesEndocrineCarePage() {
         </section>
 
         {/* 2025 Treatment Updates */}
-        <section className="container mx-auto px-4 py-8">
-          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8">
-            <h2 className="text-3xl font-bold text-gray-900 text-center mb-6">Latest Diabetes Medications 2025</h2>
+        <section className="container mx-auto px-4 py-6 md:py-8">
+          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-6 md:p-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 text-center mb-4 md:mb-6">Latest Diabetes Medications 2025</h2>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-white rounded-xl p-6 shadow-md">
                 <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">

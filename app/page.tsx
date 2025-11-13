@@ -100,7 +100,7 @@ export default function Home() {
       <Header />
 
       {/* Premium Hero Section */}
-      <section id="main-content" className="relative bg-gradient-to-br from-primary to-primary-dark text-white pt-20 pb-32 md:pt-32 md:pb-40 overflow-hidden">
+      <section id="main-content" className="relative bg-gradient-to-br from-primary to-primary-dark text-white pt-16 pb-20 md:pt-32 md:pb-40 overflow-hidden">
         {/* Animated Background Elements */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute -top-40 -right-40 w-80 h-80 bg-white/10 rounded-full blur-3xl animate-pulse-subtle"></div>
@@ -124,11 +124,11 @@ export default function Home() {
                 Super Specialty Pharmacy
               </div>
 
-              <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 leading-tight">
                 India's Leading Super Specialty Pharmacy
               </h1>
 
-              <p className="text-xl md:text-2xl mb-8 text-white leading-relaxed max-w-3xl">
+              <p className="text-lg sm:text-xl md:text-2xl mb-6 md:mb-8 text-white leading-relaxed max-w-3xl">
                 Specialized and imported medications for rare diseases, oncology, rheumatology, and complex conditions. Serving metros, tier-2 & tier-3 cities with expert clinical support, cold chain delivery, and prior authorization assistance.
               </p>
               
@@ -212,9 +212,9 @@ export default function Home() {
       </section>
 
       {/* Premium Stats Section */}
-      <section className="py-16 bg-white relative -mt-16">
+      <section className="py-12 md:py-16 bg-white relative -mt-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             {stats.map((stat, index) => (
               <div
                 key={index}
@@ -231,16 +231,16 @@ export default function Home() {
       </section>
 
       {/* Shop by Medical Condition */}
-      <section id="categories" className="py-24 bg-gradient-to-b from-white to-novo-gray">
+      <section id="categories" className="py-12 md:py-24 bg-gradient-to-b from-white to-novo-gray">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8 md:mb-16">
             <div className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-4">
               SPECIALTY THERAPEUTIC AREAS
             </div>
-            <h2 className="text-5xl font-bold mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6">
               <span className="gradient-text">Browse by Therapeutic Area</span>
             </h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed px-4">
               Access specialty medications for oncology, rheumatology, rare diseases, and complex chronic conditions
             </p>
           </div>
@@ -288,20 +288,20 @@ export default function Home() {
       </section>
 
       {/* How It Works - Premium Design */}
-      <section className="py-24 bg-gradient-to-b from-white to-novo-gray relative overflow-hidden">
+      <section className="py-12 md:py-24 bg-gradient-to-b from-white to-novo-gray relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-0 left-0 w-full h-full" style={{backgroundImage: 'radial-gradient(circle, #0F3F77 1px, transparent 1px)', backgroundSize: '50px 50px'}}></div>
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8 md:mb-16">
             <div className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-4">
               SIMPLE PROCESS
             </div>
-            <h2 className="text-5xl font-bold mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6">
               <span className="gradient-text">How Medshood Works</span>
             </h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed px-4">
               Get your medicines delivered in 4 simple steps with expert pharmacist support
             </p>
           </div>
@@ -351,16 +351,16 @@ export default function Home() {
       </section>
 
       {/* Benefits - Modern Grid */}
-      <section className="py-24 bg-white">
+      <section className="py-12 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8 md:mb-16">
             <div className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-4">
               WHY CHOOSE US
             </div>
-            <h2 className="text-5xl font-bold mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6">
               <span className="gradient-text">Everything you need to succeed</span>
             </h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed px-4">
               Comprehensive clinical support for rare diseases, biologics, and complex chronic conditions
             </p>
           </div>
@@ -389,22 +389,22 @@ export default function Home() {
       </section>
 
       {/* CTA Section - Premium Design */}
-      <section className="py-24 bg-gradient-to-br from-primary via-secondary to-accent text-white relative overflow-hidden">
+      <section className="py-12 md:py-24 bg-gradient-to-br from-primary via-secondary to-accent text-white relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-10 right-10 w-64 h-64 bg-white/5 rounded-full blur-3xl"></div>
           <div className="absolute bottom-10 left-10 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
         </div>
 
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <div className="inline-block bg-yellow-400 text-primary px-4 py-2 rounded-full text-sm font-bold mb-6">
+          <div className="inline-block bg-yellow-400 text-primary px-4 py-2 rounded-full text-sm font-bold mb-4 md:mb-6">
             GET STARTED TODAY
           </div>
 
-          <h2 className="text-5xl font-bold mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6">
             Need medicines delivered?
           </h2>
 
-          <p className="text-2xl mb-10 text-white leading-relaxed max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl md:text-2xl mb-8 md:mb-10 text-white leading-relaxed max-w-3xl mx-auto px-4">
             Upload your prescription or search for medicines - delivered to your doorstep within 24-48 hours
           </p>
 

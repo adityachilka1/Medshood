@@ -412,3 +412,192 @@ select:focus-visible {
     transform: none;
   }
 }
+
+/* ===================================
+   MOBILE OPTIMIZATION
+   100% Mobile-First Design
+   =================================== */
+
+/* Mobile Touch Targets - WCAG 2.5.5 (AAA) */
+@media (max-width: 768px) {
+  /* Minimum 44x44px touch target for all interactive elements */
+  button,
+  a,
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"],
+  [role="button"] {
+    min-height: 44px;
+    min-width: 44px;
+    padding: 12px 16px;
+  }
+
+  /* Larger tap targets for primary CTAs */
+  .btn-primary,
+  .btn-cta {
+    min-height: 48px;
+    padding: 14px 24px;
+    font-size: 16px;
+  }
+
+  /* Form inputs with adequate touch area */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="password"],
+  input[type="number"],
+  textarea,
+  select {
+    min-height: 44px;
+    font-size: 16px; /* Prevents iOS zoom on focus */
+    padding: 12px 16px;
+  }
+
+  /* Improved mobile spacing */
+  section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  /* Better mobile typography */
+  body {
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  /* Prevent horizontal scroll */
+  body, html {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  /* Mobile-friendly cards */
+  .card {
+    margin-bottom: 1rem;
+  }
+
+  /* Mobile navigation spacing */
+  nav a,
+  nav button {
+    padding: 12px 16px;
+    margin: 4px 0;
+  }
+
+  /* Improved mobile grid spacing */
+  .grid {
+    gap: 1rem;
+  }
+
+  /* Better mobile button text */
+  button,
+  .btn {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+}
+
+/* Tablet optimization (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Comfortable touch targets for tablets */
+  button,
+  a {
+    min-height: 40px;
+    padding: 10px 20px;
+  }
+
+  section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+/* Landscape mobile optimization */
+@media (max-width: 896px) and (orientation: landscape) {
+  /* Reduce vertical spacing in landscape */
+  section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  /* Smaller hero text in landscape */
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+}
+
+/* Small mobile devices (< 375px) */
+@media (max-width: 374px) {
+  /* Even larger touch targets for small screens */
+  button,
+  a,
+  input {
+    min-height: 48px;
+  }
+
+  /* Reduce padding on very small screens */
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* Smaller font sizes to fit content */
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.875rem;
+  }
+}
+
+/* Mobile performance optimizations */
+@media (max-width: 768px) {
+  /* Reduce animation complexity on mobile */
+  * {
+    animation-duration: 0.3s !important;
+  }
+
+  /* Disable parallax and complex effects on mobile */
+  [style*="parallax"],
+  .parallax {
+    transform: none !important;
+  }
+
+  /* Optimize images for mobile */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* iOS-specific optimizations */
+@supports (-webkit-touch-callout: none) {
+  /* Prevent iOS input zoom */
+  input,
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+
+  /* Smooth scrolling on iOS */
+  body {
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Fix iOS button styling */
+  button,
+  input[type="button"],
+  input[type="submit"] {
+    -webkit-appearance: none;
+    border-radius: 8px;
+  }
+}
