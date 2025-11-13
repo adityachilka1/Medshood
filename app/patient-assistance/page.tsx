@@ -2,6 +2,8 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import {
   CheckIcon,
   ClipboardIcon,
@@ -116,12 +118,12 @@ export default function PatientAssistanceProgram() {
   ];
 
   const supportedCategories = [
-    { name: 'Cancer Care', medicines: '120+', icon: '🎗️' },
-    { name: 'Heart Disease', medicines: '85+', icon: '❤️' },
-    { name: 'Diabetes', medicines: '95+', icon: '💉' },
-    { name: 'HIV/AIDS', medicines: '60+', icon: '🛡️' },
-    { name: 'Kidney Disease', medicines: '70+', icon: '🫘' },
-    { name: 'Respiratory', medicines: '55+', icon: '🫁' },
+    { name: 'Rheumatology Biologics', medicines: '85+', icon: '🦴' },
+    { name: 'Rare Diseases', medicines: '62+', icon: '💎' },
+    { name: 'Cancer Care', medicines: '320+', icon: '🎗️' },
+    { name: 'Multiple Sclerosis', medicines: '42+', icon: '🧠' },
+    { name: 'Hemophilia & Bleeding Disorders', medicines: '38+', icon: '🩸' },
+    { name: 'Inflammatory Bowel Disease', medicines: '67+', icon: '🫀' },
   ];
 
   const faqs = [
@@ -149,14 +151,7 @@ export default function PatientAssistanceProgram() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-      {/* Header */}
-      <div className="bg-white shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <Link href="/" className="text-2xl font-bold gradient-text">
-            Medshood
-          </Link>
-        </div>
-      </div>
+      <Header />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary to-primary-dark text-white py-20 overflow-hidden">
@@ -165,23 +160,19 @@ export default function PatientAssistanceProgram() {
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 bg-white/20 glass px-4 py-2 rounded-full text-sm font-medium mb-6 backdrop-blur-sm">
+            <div className="inline-flex items-center gap-2 bg-white/90 px-4 py-2 rounded-full text-sm font-semibold mb-6 backdrop-blur-sm text-primary border border-white/30 shadow-lg">
               <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
               </span>
               100% Free Assistance
             </div>
 
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              Patient Assistance{' '}
-              <span className="relative inline-block">
-                <span className="relative z-10">Program</span>
-                <span className="absolute bottom-2 left-0 w-full h-3 bg-yellow-400/30 -rotate-1"></span>
-              </span>
+              Patient Assistance Program
             </h1>
 
-            <p className="text-xl md:text-2xl mb-8 text-blue-100 leading-relaxed">
+            <p className="text-xl md:text-2xl mb-8 text-white/95 leading-relaxed">
               Can't afford your life-saving medicines? We help eligible patients access expensive medications at{' '}
               <span className="font-bold text-white">no cost or significantly reduced prices</span> through manufacturer assistance programs.
             </p>
@@ -189,18 +180,16 @@ export default function PatientAssistanceProgram() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="#apply"
-                className="group relative bg-white text-primary px-8 py-4 rounded-xl font-bold hover:scale-105 transition-all duration-300 shadow-xl"
+                className="inline-flex items-center justify-center gap-2 bg-white text-primary px-8 py-4 rounded-xl font-bold text-lg hover:shadow-2xl transition-all duration-300"
               >
-                <span className="relative z-10 flex items-center justify-center gap-2">
-                  Check Your Eligibility
-                  <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </span>
+                Check Your Eligibility
+                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
               </a>
               <a
                 href="#how-it-works"
-                className="group border-2 border-white/50 text-white px-8 py-4 rounded-xl font-bold hover:bg-white hover:text-primary transition-all duration-300 backdrop-blur-sm"
+                className="inline-flex items-center justify-center gap-2 border-2 border-white/50 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-primary transition-all duration-300 backdrop-blur-sm"
               >
                 How It Works
               </a>
@@ -210,15 +199,15 @@ export default function PatientAssistanceProgram() {
             <div className="grid grid-cols-3 gap-8 mt-16 max-w-3xl mx-auto">
               <div>
                 <div className="text-4xl font-bold mb-2">15,000+</div>
-                <div className="text-sm text-blue-200">Patients Helped</div>
+                <div className="text-sm text-white/90">Patients Helped</div>
               </div>
               <div>
                 <div className="text-4xl font-bold mb-2">₹50Cr+</div>
-                <div className="text-sm text-blue-200">Savings Generated</div>
+                <div className="text-sm text-white/90">Savings Generated</div>
               </div>
               <div>
                 <div className="text-4xl font-bold mb-2">500+</div>
-                <div className="text-sm text-blue-200">Medicines Covered</div>
+                <div className="text-sm text-white/90">Medicines Covered</div>
               </div>
             </div>
           </div>
@@ -232,7 +221,7 @@ export default function PatientAssistanceProgram() {
             <h2 className="text-4xl font-bold mb-4">
               <span className="gradient-text">Why Choose Our PAP?</span>
             </h2>
-            <p className="text-xl text-gray-800 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-900 max-w-3xl mx-auto">
               We simplify the complex process of accessing manufacturer assistance programs
             </p>
           </div>
@@ -248,7 +237,7 @@ export default function PatientAssistanceProgram() {
               >
                 <div className="text-5xl mb-4">{benefit.icon}</div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{benefit.title}</h3>
-                <p className="text-gray-800">{benefit.description}</p>
+                <p className="text-gray-900">{benefit.description}</p>
               </div>
             ))}
           </div>
@@ -262,7 +251,7 @@ export default function PatientAssistanceProgram() {
             <h2 className="text-4xl font-bold mb-4">
               <span className="gradient-text">How It Works</span>
             </h2>
-            <p className="text-xl text-gray-800 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-900 max-w-3xl mx-auto">
               Simple 4-step process to access life-saving medicines
             </p>
           </div>
@@ -284,7 +273,7 @@ export default function PatientAssistanceProgram() {
                     {step.icon}
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-3">{step.title}</h3>
-                  <p className="text-gray-800">{step.description}</p>
+                  <p className="text-gray-900">{step.description}</p>
                 </div>
               </div>
             ))}
@@ -299,7 +288,7 @@ export default function PatientAssistanceProgram() {
             <h2 className="text-4xl font-bold mb-4">
               <span className="gradient-text">Medicines We Cover</span>
             </h2>
-            <p className="text-xl text-gray-800 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-900 max-w-3xl mx-auto">
               Access assistance for 500+ medicines across major health conditions
             </p>
           </div>
@@ -314,7 +303,7 @@ export default function PatientAssistanceProgram() {
                   <div className="text-4xl">{category.icon}</div>
                   <div>
                     <h3 className="text-xl font-bold text-gray-900 mb-1">{category.name}</h3>
-                    <p className="text-gray-800">{category.medicines} medicines</p>
+                    <p className="text-gray-900">{category.medicines} medicines</p>
                   </div>
                 </div>
               </div>
@@ -322,7 +311,7 @@ export default function PatientAssistanceProgram() {
           </div>
 
           <div className="text-center mt-12">
-            <p className="text-gray-800 mb-4">
+            <p className="text-gray-900 mb-4">
               Don't see your condition? Contact us to check eligibility
             </p>
             <Link href="/contact" className="text-primary font-bold hover:underline">
@@ -339,7 +328,7 @@ export default function PatientAssistanceProgram() {
             <h2 className="text-4xl font-bold mb-4">
               <span className="gradient-text">Eligibility Criteria</span>
             </h2>
-            <p className="text-xl text-gray-800 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-900 max-w-3xl mx-auto">
               Check if you qualify for our Patient Assistance Program
             </p>
           </div>
@@ -352,7 +341,7 @@ export default function PatientAssistanceProgram() {
                   {section.criteria.map((item, iIndex) => (
                     <li key={iIndex} className="flex items-start gap-3">
                       <CheckIcon className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" />
-                      <span className="text-gray-700">{item}</span>
+                      <span className="text-gray-900">{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -369,7 +358,7 @@ export default function PatientAssistanceProgram() {
             <h2 className="text-4xl font-bold mb-4">
               <span className="gradient-text">Apply for Assistance</span>
             </h2>
-            <p className="text-xl text-gray-800">
+            <p className="text-xl text-gray-900">
               Start your application in 2 minutes. Our team will contact you within 24 hours.
             </p>
           </div>
@@ -459,7 +448,7 @@ export default function PatientAssistanceProgram() {
               Submit Application
             </button>
 
-            <p className="text-sm text-gray-800 mt-4 text-center">
+            <p className="text-sm text-gray-900 mt-4 text-center">
               By submitting, you agree to our{' '}
               <Link href="/privacy" className="text-primary font-semibold">
                 Privacy Policy
@@ -483,13 +472,13 @@ export default function PatientAssistanceProgram() {
             {faqs.map((faq, index) => (
               <div key={index} className="bg-white p-6 rounded-xl shadow-sm">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{faq.q}</h3>
-                <p className="text-gray-700 leading-relaxed">{faq.a}</p>
+                <p className="text-gray-900 leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
 
           <div className="text-center mt-12">
-            <p className="text-gray-800 mb-4">
+            <p className="text-gray-900 mb-4">
               Have more questions?
             </p>
             <Link href="/contact" className="text-primary font-bold text-lg hover:underline">
@@ -508,7 +497,7 @@ export default function PatientAssistanceProgram() {
                 <CheckIcon className="w-12 h-12 text-white" />
               </div>
               <h2 className="text-3xl font-bold mb-4">Your Privacy is Protected</h2>
-              <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+              <p className="text-xl text-gray-900 max-w-3xl mx-auto">
                 All information is encrypted and shared only with relevant manufacturer programs. We never sell your data.
               </p>
             </div>
@@ -541,21 +530,23 @@ export default function PatientAssistanceProgram() {
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Don't Let Cost Stop Your Treatment
           </h2>
-          <p className="text-xl md:text-2xl mb-10 text-blue-100 leading-relaxed">
+          <p className="text-xl md:text-2xl mb-10 text-white/95 leading-relaxed">
             Join 15,000+ patients who have accessed life-saving medicines through our assistance program
           </p>
           <a
             href="#apply"
-            className="inline-flex items-center gap-3 bg-white text-primary px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl"
+            className="inline-flex items-center justify-center gap-2 bg-white text-primary px-8 py-4 rounded-xl font-bold text-lg hover:shadow-2xl transition-all duration-300"
           >
             <CheckIcon className="w-6 h-6" />
             Apply Now - It's Free
           </a>
-          <p className="text-sm mt-6 text-blue-200">
+          <p className="text-sm mt-6 text-white/90">
             Average approval time: 24-48 hours | 95% approval rate for eligible patients
           </p>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 }

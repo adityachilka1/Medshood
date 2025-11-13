@@ -141,12 +141,12 @@ export default function Pricing() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary to-secondary text-white py-20 md:py-28">
+      <section className="relative bg-gradient-to-br from-primary to-primary-dark text-white py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
             Simple, transparent pricing
           </h1>
-          <p className="text-xl mb-8 text-blue-100 max-w-3xl mx-auto">
+          <p className="text-xl mb-8 text-white leading-relaxed max-w-3xl mx-auto">
             Choose the plan that works best for your weight loss journey. All plans include medication, doctor care, and comprehensive support.
           </p>
         </div>
@@ -174,14 +174,14 @@ export default function Pricing() {
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">{plan.name}</h3>
                   <div className="flex items-baseline mb-4">
                     <span className="text-4xl font-bold text-primary">{plan.price}</span>
-                    <span className="text-gray-600 ml-2">{plan.period}</span>
+                    <span className="text-gray-900 ml-2">{plan.period}</span>
                   </div>
                   {plan.savings && (
                     <div className="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold mb-4">
                       {plan.savings}
                     </div>
                   )}
-                  <p className="text-gray-600 mb-6">{plan.description}</p>
+                  <p className="text-gray-700 mb-6 leading-relaxed text-base">{plan.description}</p>
                   <Link 
                     href="/quiz"
                     className={`block w-full text-center py-3 rounded-md font-semibold transition mb-6 ${
@@ -198,7 +198,7 @@ export default function Pricing() {
                         <svg className="w-5 h-5 text-primary mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
-                        <span className="text-gray-700 text-sm">{feature}</span>
+                        <span className="text-gray-700 text-sm leading-relaxed">{feature}</span>
                       </li>
                     ))}
                   </ul>
@@ -208,7 +208,7 @@ export default function Pricing() {
           </div>
 
           <div className="mt-12 text-center">
-            <p className="text-gray-600 mb-4">
+            <p className="text-gray-900 mb-4">
               All plans are billed upfront. Medication costs may vary based on dosage requirements.
             </p>
             <Link href="/quiz" className="text-primary font-semibold hover:text-secondary">
@@ -223,7 +223,7 @@ export default function Pricing() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-primary mb-4">What's included in every plan</h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
               Comprehensive support for your weight loss journey
             </p>
           </div>
@@ -237,7 +237,7 @@ export default function Pricing() {
                       <svg className="w-4 h-4 text-primary mr-2 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
-                      <span className="text-sm text-gray-700">{item}</span>
+                      <span className="text-sm text-gray-700 leading-relaxed">{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -257,10 +257,10 @@ export default function Pricing() {
               </svg>
             </div>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">90-Day Money-Back Guarantee</h2>
-            <p className="text-lg text-gray-700 mb-6">
+            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
               We're confident you'll see results. If you follow the programme for 90 days and don't lose weight, we'll refund your medication costs. No questions asked.
             </p>
-            <p className="text-sm text-gray-600">
+            <p className="text-sm text-gray-700 leading-relaxed">
               *Consultation fees are non-refundable as they cover medical services already provided.
             </p>
           </div>
@@ -277,7 +277,7 @@ export default function Pricing() {
             {faqs.map((faq, index) => (
               <div key={index} className="bg-white p-6 rounded-lg">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{faq.q}</h3>
-                <p className="text-gray-700">{faq.a}</p>
+                <p className="text-gray-700 leading-relaxed text-base">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -288,12 +288,12 @@ export default function Pricing() {
       <section className="py-20 bg-primary text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-6">Ready to get started?</h2>
-          <p className="text-xl mb-8 text-blue-100">
+          <p className="text-xl mb-8 text-white leading-relaxed max-w-3xl mx-auto">
             Take the first step towards sustainable weight loss with medical support
           </p>
-          <Link 
-            href="/quiz" 
-            className="inline-block bg-white text-primary px-8 py-4 rounded-md font-semibold hover:bg-gray-100 transition text-lg"
+          <Link
+            href="/quiz"
+            className="inline-flex items-center justify-center gap-2 bg-white text-primary px-8 py-4 rounded-xl font-bold text-lg hover:shadow-2xl transition-all duration-300"
           >
             Check Your Eligibility
           </Link>

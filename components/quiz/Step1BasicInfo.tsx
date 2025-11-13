@@ -12,7 +12,7 @@ export const Step1BasicInfo: React.FC<StepProps> = ({ formData, errors, onInputC
   return (
     <div className="space-y-6">
       <h2 className="text-3xl font-bold text-primary mb-4">Let's start with some basics</h2>
-      <p className="text-gray-700 mb-8">This information helps us determine if you're eligible for GLP-1 treatment.</p>
+      <p className="text-gray-900 mb-8">This information helps us determine if you're eligible for GLP-1 treatment.</p>
 
       <FormInput
         label="What is your age?"
@@ -42,7 +42,7 @@ export const Step1BasicInfo: React.FC<StepProps> = ({ formData, errors, onInputC
               className={`py-3 px-4 rounded-lg font-semibold transition-smooth focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 ${
                 formData.gender === gender
                   ? 'bg-primary text-white'
-                  : 'bg-white border-2 border-gray-300 text-gray-700 hover:border-primary'
+                  : 'bg-white border-2 border-gray-300 text-gray-900 hover:border-primary'
               }`}
               role="radio"
               aria-checked={formData.gender === gender}

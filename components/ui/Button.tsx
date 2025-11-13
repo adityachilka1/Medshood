@@ -17,7 +17,7 @@ export const Button: React.FC<ButtonProps> = ({
   const variantClasses = {
     primary: "bg-primary text-white hover:bg-secondary focus:ring-primary",
     secondary: "border-2 border-primary text-primary hover:bg-primary hover:text-white focus:ring-primary",
-    outline: "bg-white border-2 border-gray-300 text-gray-700 hover:border-primary hover:text-primary focus:ring-gray-300"
+    outline: "bg-white border-2 border-gray-300 text-gray-900 hover:border-primary hover:text-primary focus:ring-gray-300"
   };
 
   const sizeClasses = {
@@ -54,7 +54,7 @@ export const LinkButton: React.FC<ButtonProps & { href: string }> = ({
   const variantClasses = {
     primary: "bg-primary text-white hover:bg-secondary focus:ring-primary",
     secondary: "border-2 border-primary text-primary hover:bg-primary hover:text-white focus:ring-primary",
-    outline: "bg-white border-2 border-gray-300 text-gray-700 hover:border-primary hover:text-primary focus:ring-gray-300"
+    outline: "bg-white border-2 border-gray-300 text-gray-900 hover:border-primary hover:text-primary focus:ring-gray-300"
   };
 
   const sizeClasses = {

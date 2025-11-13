@@ -11,7 +11,7 @@ export const Step5PreviousAttempts: React.FC<StepProps> = ({ formData, errors, o
   return (
     <div className="space-y-6">
       <h2 className="text-3xl font-bold text-primary mb-4">Weight Loss History</h2>
-      <p className="text-gray-700 mb-8">
+      <p className="text-gray-900 mb-8">
         What weight loss methods have you tried before?
         <span className="text-red-600 ml-1" aria-label="required">*</span>
       </p>

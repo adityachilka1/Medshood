@@ -72,12 +72,12 @@ export default function Reviews() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary to-secondary text-white py-20 md:py-28">
+      <section className="relative bg-gradient-to-br from-primary to-primary-dark text-white py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
             Real patients. Real specialty care.
           </h1>
-          <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+          <p className="text-xl text-white/95 max-w-3xl mx-auto">
             Read success stories from patients managing rare diseases and complex conditions with Medshood's specialty pharmacy services.
           </p>
         </div>
@@ -90,7 +90,7 @@ export default function Reviews() {
             {stats.map((stat, index) => (
               <div key={index}>
                 <div className="text-5xl font-bold text-primary mb-2">{stat.value}</div>
-                <div className="text-gray-600">{stat.label}</div>
+                <div className="text-gray-900">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -102,7 +102,7 @@ export default function Reviews() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-primary mb-4">Patient Success Stories</h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-900 max-w-3xl mx-auto">
               Discover how Medshood's specialty pharmacy services help patients across India manage complex medical conditions
             </p>
           </div>
@@ -125,12 +125,12 @@ export default function Reviews() {
                 </div>
 
                 {/* Review Text */}
-                <p className="text-gray-700 mb-4 leading-relaxed">"{review.review}"</p>
+                <p className="text-gray-900 mb-4 leading-relaxed">"{review.review}"</p>
 
                 {/* Reviewer Info */}
                 <div className="border-t pt-4">
                   <div className="font-semibold text-gray-900">{review.name}, {review.age}</div>
-                  <div className="text-sm text-gray-600">{review.location}</div>
+                  <div className="text-sm text-gray-900">{review.location}</div>
                 </div>
 
                 {review.beforeAfter && (
@@ -145,7 +145,7 @@ export default function Reviews() {
           </div>
 
           <div className="text-center mt-12">
-            <p className="text-gray-600 mb-4">
+            <p className="text-gray-900 mb-4">
               All reviews are from verified Medshood patients. Individual treatment outcomes may vary. Always consult your healthcare provider.
             </p>
           </div>
@@ -157,7 +157,7 @@ export default function Reviews() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-primary mb-4">Video Testimonials</h2>
-            <p className="text-xl text-gray-700">
+            <p className="text-xl text-gray-900">
               Hear directly from our members about their experiences
             </p>
           </div>
@@ -168,7 +168,7 @@ export default function Reviews() {
                   <svg className="w-16 h-16 text-primary mx-auto mb-4" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" />
                   </svg>
-                  <div className="text-gray-700 font-semibold">Video Testimonial {i}</div>
+                  <div className="text-gray-900 font-semibold">Video Testimonial {i}</div>
                 </div>
               </div>
             ))}
@@ -180,12 +180,12 @@ export default function Reviews() {
       <section className="py-20 bg-primary text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-6">Get specialty pharmacy support for your condition</h2>
-          <p className="text-xl mb-8 text-blue-100">
+          <p className="text-xl mb-8 text-white/95">
             Join patients across India who trust Medshood for rare disease and complex specialty medications
           </p>
           <Link
             href="/upload-prescription"
-            className="inline-block bg-white text-primary px-8 py-4 rounded-md font-semibold hover:bg-gray-100 transition text-lg"
+            className="inline-flex items-center justify-center gap-2 bg-white text-primary px-8 py-4 rounded-xl font-bold text-lg hover:shadow-2xl transition-all duration-300"
           >
             Upload Your Prescription
           </Link>

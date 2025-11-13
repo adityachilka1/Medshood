@@ -17,7 +17,7 @@ export const Step2Measurements: React.FC<StepProps> = ({ formData, errors, onInp
   return (
     <div className="space-y-6">
       <h2 className="text-3xl font-bold text-primary mb-4">Your Measurements</h2>
-      <p className="text-gray-700 mb-8">Please provide accurate measurements for eligibility assessment.</p>
+      <p className="text-gray-900 mb-8">Please provide accurate measurements for eligibility assessment.</p>
 
       <div className="grid md:grid-cols-2 gap-6">
         <FormInput
@@ -51,9 +51,9 @@ export const Step2Measurements: React.FC<StepProps> = ({ formData, errors, onInp
 
       {bmi > 0 && (
         <div className="bg-blue-50 border-2 border-primary rounded-lg p-6">
-          <p className="text-sm text-gray-700 mb-2">Your BMI (Body Mass Index)</p>
+          <p className="text-sm text-gray-900 mb-2">Your BMI (Body Mass Index)</p>
           <p className="text-4xl font-bold text-primary">{bmi}</p>
-          <p className="text-sm text-gray-600 mt-2">
+          <p className="text-sm text-gray-900 mt-2">
             {bmi < 18.5 && 'Underweight'}
             {bmi >= 18.5 && bmi < 25 && 'Normal weight'}
             {bmi >= 25 && bmi < 30 && 'Overweight'}

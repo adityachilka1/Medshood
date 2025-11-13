@@ -11,7 +11,7 @@ export const Step3MedicalHistory: React.FC<StepProps> = ({ formData, errors, onC
   return (
     <div className="space-y-6">
       <h2 className="text-3xl font-bold text-primary mb-4">Medical History</h2>
-      <p className="text-gray-700 mb-8">
+      <p className="text-gray-900 mb-8">
         Do you have any of the following conditions?
         <span className="text-red-600 ml-1" aria-label="required">*</span>
       </p>

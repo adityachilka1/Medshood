@@ -45,7 +45,7 @@ export default function Home() {
     {
       step: "03",
       title: "Fast Delivery",
-      description: "Get authentic specialty medications with temperature-controlled cold chain delivery within 24-48 hours",
+      description: "Get authentic specialty medications with temperature-controlled cold chain delivery within 24 hours in metros, next-day for tier-2/tier-3 cities",
       Icon: PackageIcon
     },
     {
@@ -58,8 +58,8 @@ export default function Home() {
 
   const benefits = [
     {
-      title: "Specialty Medications",
-      description: "Rare disease biologics, oncology drugs, and complex therapies sourced from licensed manufacturers",
+      title: "Specialty & Imported Medications",
+      description: "Rare disease biologics, oncology drugs, and complex therapies sourced from licensed manufacturers worldwide. Including imported medicines and GLP-1 therapies.",
       Icon: CheckmarkBadgeIcon,
       color: "from-blue-500 to-blue-600"
     },
@@ -100,7 +100,7 @@ export default function Home() {
       <Header />
 
       {/* Premium Hero Section */}
-      <section id="main-content" className="relative bg-gradient-to-br from-primary via-secondary to-accent text-white pt-20 pb-32 md:pt-32 md:pb-40 overflow-hidden">
+      <section id="main-content" className="relative bg-gradient-to-br from-primary to-primary-dark text-white pt-20 pb-32 md:pt-32 md:pb-40 overflow-hidden">
         {/* Animated Background Elements */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute -top-40 -right-40 w-80 h-80 bg-white/10 rounded-full blur-3xl animate-pulse-subtle"></div>
@@ -116,47 +116,39 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Column - Content */}
             <div className={`${mounted ? 'animate-fade-in-up' : 'opacity-0'}`}>
-              <div className="inline-flex items-center gap-2 bg-white/20 glass px-4 py-2 rounded-full text-sm font-medium mb-6 backdrop-blur-sm">
+              <div className="inline-flex items-center gap-2 bg-white/90 px-4 py-2 rounded-full text-sm font-semibold mb-6 backdrop-blur-sm text-primary border border-white/30 shadow-lg">
                 <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
                 </span>
                 Super Specialty Pharmacy
               </div>
 
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-                India's Leading{" "}
-                <span className="relative inline-block">
-                  <span className="relative z-10">Super Specialty Pharmacy</span>
-                  <span className="absolute bottom-2 left-0 w-full h-3 bg-yellow-400/30 -rotate-1"></span>
-                </span>
+              <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                India's Leading Super Specialty Pharmacy
               </h1>
 
-              <p className="text-xl md:text-2xl mb-8 text-white leading-relaxed opacity-95">
-                Specialized medications for rare diseases, oncology, rheumatology, and complex conditions. Expert clinical support, cold chain delivery, and prior authorization assistance.
+              <p className="text-xl md:text-2xl mb-8 text-white leading-relaxed max-w-3xl">
+                Specialized and imported medications for rare diseases, oncology, rheumatology, and complex conditions. Serving metros, tier-2 & tier-3 cities with expert clinical support, cold chain delivery, and prior authorization assistance.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="#categories"
-                  className="group relative bg-white text-primary px-8 py-4 rounded-xl font-bold hover:shadow-2xl transition-all duration-300 text-center overflow-hidden btn-premium"
+                  className="inline-flex items-center justify-center gap-2 bg-white text-primary px-8 py-4 rounded-xl font-bold text-lg hover:shadow-2xl transition-all duration-300"
                 >
-                  <span className="relative z-10 flex items-center justify-center gap-2">
-                    <SearchIcon className="w-5 h-5" />
-                    Browse Medicines
-                    <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </span>
+                  <SearchIcon className="w-5 h-5" />
+                  Browse Medicines
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
                 </Link>
                 <Link
                   href="/upload-prescription"
-                  className="group border-2 border-white/50 text-white px-8 py-4 rounded-xl font-bold hover:bg-white hover:text-primary transition-all duration-300 text-center backdrop-blur-sm"
+                  className="inline-flex items-center justify-center gap-2 border-2 border-white/50 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-primary transition-all duration-300 backdrop-blur-sm"
                 >
-                  <span className="flex items-center justify-center gap-2">
-                    <UploadIcon className="w-5 h-5" />
-                    Upload Prescription
-                  </span>
+                  <UploadIcon className="w-5 h-5" />
+                  Upload Prescription
                 </Link>
               </div>
 
@@ -186,21 +178,21 @@ export default function Home() {
             {/* Right Column - Visual Element */}
             <div className={`hidden lg:block ${mounted ? 'animate-fade-in' : 'opacity-0'}`} style={{animationDelay: '0.3s'}}>
               <div className="relative">
-                {/* Main Card */}
-                <div className="glass p-8 rounded-3xl backdrop-blur-lg border-2 border-white/20 shadow-2xl">
+                {/* Main Card - Liquid Glass Effect */}
+                <div className="glass-card p-8 rounded-3xl transition-all duration-300">
                   <div className="text-center">
-                    <div className="text-7xl font-bold mb-4 animate-pulse-subtle">500+</div>
-                    <div className="text-2xl font-semibold mb-2">Specialty Medications</div>
-                    <div className="text-blue-200">Rare Disease & Complex Therapies</div>
+                    <div className="text-7xl font-bold mb-4 animate-pulse-subtle text-white">500+</div>
+                    <div className="text-2xl font-semibold mb-2 text-white">Specialty Medications</div>
+                    <div className="text-white/90">Rare Disease & Complex Therapies</div>
 
                     <div className="grid grid-cols-2 gap-4 mt-8">
-                      <div className="bg-white/10 p-4 rounded-xl">
-                        <div className="text-3xl font-bold">24/7</div>
-                        <div className="text-sm text-blue-200">Clinical Support</div>
+                      <div className="glass-card p-4 rounded-xl transition-all duration-300">
+                        <div className="text-3xl font-bold text-white">24/7</div>
+                        <div className="text-sm text-white/90">Clinical Support</div>
                       </div>
-                      <div className="bg-white/10 p-4 rounded-xl">
-                        <div className="text-3xl font-bold">2-8°C</div>
-                        <div className="text-sm text-blue-200">Cold Chain</div>
+                      <div className="glass-card p-4 rounded-xl transition-all duration-300">
+                        <div className="text-3xl font-bold text-white">2-8°C</div>
+                        <div className="text-sm text-white/90">Cold Chain</div>
                       </div>
                     </div>
                   </div>
@@ -230,8 +222,8 @@ export default function Home() {
                 style={{animationDelay: `${index * 0.1}s`}}
               >
                 <div className="text-4xl font-bold gradient-text mb-2">{stat.value}</div>
-                <div className="text-gray-900 font-semibold">{stat.label}</div>
-                <div className="text-sm text-gray-800">{stat.sublabel}</div>
+                <div className="text-gray-900 font-semibold text-base">{stat.label}</div>
+                <div className="text-sm text-gray-700 leading-relaxed">{stat.sublabel}</div>
               </div>
             ))}
           </div>
@@ -248,7 +240,7 @@ export default function Home() {
             <h2 className="text-5xl font-bold mb-6">
               <span className="gradient-text">Browse by Therapeutic Area</span>
             </h2>
-            <p className="text-xl text-gray-800 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
               Access specialty medications for oncology, rheumatology, rare diseases, and complex chronic conditions
             </p>
           </div>
@@ -269,7 +261,7 @@ export default function Home() {
                     <category.Icon className="w-12 h-12" />
                   </div>
                   <h3 className="text-2xl font-bold mb-3">{category.name}</h3>
-                  <p className="text-white/90 leading-relaxed mb-4">{category.description}</p>
+                  <p className="text-white leading-relaxed mb-4 text-base">{category.description}</p>
                   <div className="flex items-center justify-between">
                     <span className="text-sm font-semibold">{category.medicineCount}+ Medicines</span>
                     <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -309,7 +301,7 @@ export default function Home() {
             <h2 className="text-5xl font-bold mb-6">
               <span className="gradient-text">How Medshood Works</span>
             </h2>
-            <p className="text-xl text-gray-800 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
               Get your medicines delivered in 4 simple steps with expert pharmacist support
             </p>
           </div>
@@ -329,7 +321,7 @@ export default function Home() {
                   </div>
                   
                   <h3 className="text-2xl font-bold text-gray-900 mb-3">{step.title}</h3>
-                  <p className="text-gray-800 leading-relaxed">{step.description}</p>
+                  <p className="text-gray-700 leading-relaxed text-base">{step.description}</p>
                   
                   {/* Arrow for non-last items */}
                   {index < howItWorks.length - 1 && (
@@ -368,8 +360,8 @@ export default function Home() {
             <h2 className="text-5xl font-bold mb-6">
               <span className="gradient-text">Everything you need to succeed</span>
             </h2>
-            <p className="text-xl text-gray-800 max-w-3xl mx-auto">
-              Comprehensive support for sustainable, long-term weight loss
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+              Comprehensive clinical support for rare diseases, biologics, and complex chronic conditions
             </p>
           </div>
 
@@ -388,7 +380,7 @@ export default function Home() {
                     <benefit.Icon className="w-12 h-12" />
                   </div>
                   <h3 className="text-2xl font-bold mb-3">{benefit.title}</h3>
-                  <p className="text-white/90 leading-relaxed">{benefit.description}</p>
+                  <p className="text-white leading-relaxed text-base">{benefit.description}</p>
                 </div>
               </div>
             ))}
@@ -412,26 +404,26 @@ export default function Home() {
             Need medicines delivered?
           </h2>
 
-          <p className="text-2xl mb-10 text-blue-100 leading-relaxed">
+          <p className="text-2xl mb-10 text-white leading-relaxed max-w-3xl mx-auto">
             Upload your prescription or search for medicines - delivered to your doorstep within 24-48 hours
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/upload-prescription"
-              className="group bg-white text-primary px-10 py-5 rounded-xl font-bold hover:shadow-2xl transition-all duration-300 text-lg btn-premium inline-flex items-center justify-center gap-2"
+              className="inline-flex items-center justify-center gap-2 bg-white text-primary px-8 py-4 rounded-xl font-bold text-lg hover:shadow-2xl transition-all duration-300"
             >
-              <UploadIcon className="w-6 h-6" />
-              <span>Upload Prescription</span>
-              <svg className="w-6 h-6 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <UploadIcon className="w-5 h-5" />
+              Upload Prescription
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </Link>
             <Link
               href="#categories"
-              className="border-2 border-white/50 text-white px-10 py-5 rounded-xl font-bold hover:bg-white hover:text-primary transition-all duration-300 text-lg backdrop-blur-sm inline-flex items-center justify-center gap-2"
+              className="inline-flex items-center justify-center gap-2 border-2 border-white/50 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-primary transition-all duration-300 backdrop-blur-sm"
             >
-              <SearchIcon className="w-6 h-6" />
+              <SearchIcon className="w-5 h-5" />
               Browse Medicines
             </Link>
           </div>
@@ -439,15 +431,51 @@ export default function Home() {
           <div className="mt-12 grid grid-cols-3 gap-8 max-w-2xl mx-auto">
             <div>
               <div className="text-4xl font-bold mb-2">5,000+</div>
-              <div className="text-sm text-blue-200">Medicines Available</div>
+              <div className="text-sm text-white/90">Medicines Available</div>
             </div>
             <div>
               <div className="text-4xl font-bold mb-2">98%</div>
-              <div className="text-sm text-blue-200">Customer Satisfaction</div>
+              <div className="text-sm text-white/90">Customer Satisfaction</div>
             </div>
             <div>
               <div className="text-4xl font-bold mb-2">24-48hr</div>
-              <div className="text-sm text-blue-200">Fast Delivery</div>
+              <div className="text-sm text-white/90">Fast Delivery</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Healthcare Trust & Compliance */}
+      <section className="py-16 bg-gray-50 border-t border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-3">
+              Trusted & Certified Healthcare Partner
+            </h2>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              Your safety and privacy are our top priorities
+            </p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+            <div className="text-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+              <div className="text-4xl mb-3">🏥</div>
+              <div className="font-semibold text-gray-900 mb-1">Licensed Pharmacy</div>
+              <div className="text-sm text-gray-900">Govt. of India Approved</div>
+            </div>
+            <div className="text-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+              <div className="text-4xl mb-3">🔒</div>
+              <div className="font-semibold text-gray-900 mb-1">HIPAA Compliant</div>
+              <div className="text-sm text-gray-900">Patient Data Protected</div>
+            </div>
+            <div className="text-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+              <div className="text-4xl mb-3">✓</div>
+              <div className="font-semibold text-gray-900 mb-1">Certified Pharmacists</div>
+              <div className="text-sm text-gray-900">Clinical Expertise</div>
+            </div>
+            <div className="text-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+              <div className="text-4xl mb-3">🌡️</div>
+              <div className="font-semibold text-gray-900 mb-1">Cold Chain Certified</div>
+              <div className="text-sm text-gray-900">WHO GDP Standards</div>
             </div>
           </div>
         </div>

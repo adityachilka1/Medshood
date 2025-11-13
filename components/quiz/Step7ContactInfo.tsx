@@ -12,7 +12,7 @@ export const Step7ContactInfo: React.FC<StepProps> = ({ formData, errors, onInpu
   return (
     <div className="space-y-6">
       <h2 className="text-3xl font-bold text-primary mb-4">Contact Information</h2>
-      <p className="text-gray-700 mb-8">
+      <p className="text-gray-900 mb-8">
         We'll use this information to contact you about your eligibility and next steps.
       </p>
 

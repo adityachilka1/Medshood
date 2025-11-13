@@ -2,6 +2,8 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import { MEDICAL_CATEGORIES } from '@/constants/categories';
 import { SearchIcon } from '@/components/icons/CheckIcon';
 
@@ -21,28 +23,17 @@ export default function CategoriesPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-      {/* Header */}
-      <div className="bg-white shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <Link href="/" className="text-2xl font-bold gradient-text">
-            Medshood
-          </Link>
-        </div>
-      </div>
+      <Header />
 
       {/* Hero Section */}
       <div className="bg-gradient-to-br from-primary to-primary-dark text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
-            <div className="inline-block bg-white/20 glass px-4 py-2 rounded-full text-sm font-medium mb-4 backdrop-blur-sm">
+            <div className="inline-block bg-white/90 px-4 py-2 rounded-full text-sm font-semibold mb-4 backdrop-blur-sm text-primary border border-white/30 shadow-lg">
               MEDICAL CATEGORIES
             </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Browse by{' '}
-              <span className="relative inline-block">
-                <span className="relative z-10">Health Condition</span>
-                <span className="absolute bottom-2 left-0 w-full h-3 bg-yellow-400/30 -rotate-1"></span>
-              </span>
+              Browse by Health Condition
             </h1>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto opacity-95">
               Find authentic specialty and chronic disease medications for your specific health needs
@@ -53,14 +44,14 @@ export default function CategoriesPage() {
           <div className="max-w-2xl mx-auto">
             <div className="relative">
               <div className="absolute inset-y-0 left-4 flex items-center pointer-events-none">
-                <SearchIcon className="w-5 h-5 text-gray-400" />
+                <SearchIcon className="w-5 h-5 text-gray-900" />
               </div>
               <input
                 type="text"
                 placeholder="Search for a medical condition or category..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-12 pr-4 py-4 rounded-xl text-gray-900 placeholder-gray-500 focus:ring-4 focus:ring-white/30 focus:outline-none text-lg"
+                className="w-full pl-12 pr-4 py-4 rounded-xl text-gray-900 placeholder-gray-600 focus:ring-4 focus:ring-white/30 focus:outline-none text-lg"
               />
             </div>
           </div>
@@ -72,7 +63,7 @@ export default function CategoriesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {filteredCategories.length === 0 ? (
             <div className="text-center py-16">
-              <p className="text-2xl text-gray-800 mb-4">No categories found</p>
+              <p className="text-2xl text-gray-900 mb-4">No categories found</p>
               <p className="text-gray-500">
                 Try adjusting your search terms
               </p>
@@ -80,14 +71,14 @@ export default function CategoriesPage() {
           ) : (
             <>
               <div className="mb-8">
-                <h2 className="text-3xl font-bold mb-2">
+                <h2 className="text-3xl font-bold text-gray-900 mb-2">
                   {searchQuery
                     ? `Found ${filteredCategories.length} ${
                         filteredCategories.length === 1 ? 'category' : 'categories'
                       }`
                     : `All ${filteredCategories.length} Medical Categories`}
                 </h2>
-                <p className="text-gray-800">
+                <p className="text-gray-900">
                   Select a category to browse medicines for your condition
                 </p>
               </div>
@@ -115,7 +106,7 @@ export default function CategoriesPage() {
                         </div>
                         <h3 className="text-2xl font-bold mb-2">{category.name}</h3>
                         <div className="flex items-center gap-2">
-                          <span className="text-sm font-semibold bg-white/20 px-3 py-1 rounded-full">
+                          <span className="text-sm font-semibold bg-white/30 text-white px-3 py-1 rounded-full border border-white/40">
                             {category.medicineCount}+ Medicines
                           </span>
                         </div>
@@ -124,7 +115,7 @@ export default function CategoriesPage() {
 
                     {/* Content */}
                     <div className="p-6">
-                      <p className="text-gray-800 leading-relaxed mb-4">
+                      <p className="text-gray-900 leading-relaxed mb-4">
                         {category.description}
                       </p>
                       <div className="flex items-center gap-2 text-primary font-bold group-hover:gap-3 transition-all">
@@ -160,7 +151,7 @@ export default function CategoriesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Choose Medshood?</h2>
-            <p className="text-xl text-gray-800">
+            <p className="text-xl text-gray-900">
               Your trusted partner for specialty and chronic disease medications
             </p>
           </div>
@@ -169,28 +160,28 @@ export default function CategoriesPage() {
             <div className="bg-white p-6 rounded-xl text-center">
               <div className="text-4xl mb-3">✓</div>
               <h3 className="font-bold text-gray-900 mb-2">100% Authentic</h3>
-              <p className="text-sm text-gray-800">
+              <p className="text-sm text-gray-900">
                 All medicines sourced directly from licensed distributors
               </p>
             </div>
             <div className="bg-white p-6 rounded-xl text-center">
               <div className="text-4xl mb-3">💊</div>
               <h3 className="font-bold text-gray-900 mb-2">5,000+ Medicines</h3>
-              <p className="text-sm text-gray-800">
+              <p className="text-sm text-gray-900">
                 Comprehensive catalog across all major categories
               </p>
             </div>
             <div className="bg-white p-6 rounded-xl text-center">
               <div className="text-4xl mb-3">⚡</div>
               <h3 className="font-bold text-gray-900 mb-2">24-48hr Delivery</h3>
-              <p className="text-sm text-gray-800">
+              <p className="text-sm text-gray-900">
                 Fast doorstep delivery across India
               </p>
             </div>
             <div className="bg-white p-6 rounded-xl text-center">
               <div className="text-4xl mb-3">💰</div>
               <h3 className="font-bold text-gray-900 mb-2">Up to 70% Off</h3>
-              <p className="text-sm text-gray-800">
+              <p className="text-sm text-gray-900">
                 Best prices with maximum savings guaranteed
               </p>
             </div>
@@ -202,12 +193,12 @@ export default function CategoriesPage() {
       <div className="bg-gradient-to-br from-primary to-primary-dark text-white py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-6">Have a Prescription?</h2>
-          <p className="text-xl mb-8 text-blue-100">
+          <p className="text-xl mb-8 text-white/95">
             Upload your prescription and get medicines delivered to your doorstep
           </p>
           <Link
             href="/upload-prescription"
-            className="inline-flex items-center gap-3 bg-white text-primary px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-all duration-300 shadow-lg"
+            className="inline-flex items-center justify-center gap-2 bg-white text-primary px-8 py-4 rounded-xl font-bold text-lg hover:shadow-2xl transition-all duration-300"
           >
             <svg
               className="w-6 h-6"
@@ -226,6 +217,8 @@ export default function CategoriesPage() {
           </Link>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 }

@@ -137,18 +137,18 @@ export default function SpecialtyBiologics() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary to-secondary text-white py-20 md:py-28">
+      <section className="relative bg-gradient-to-br from-primary to-primary-dark text-white py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
               The science behind specialty biologic therapies
             </h1>
-            <p className="text-xl mb-8 text-blue-100">
+            <p className="text-xl mb-8 text-white/95">
               Discover how targeted biologic medications revolutionize treatment for rheumatoid arthritis, inflammatory bowel disease, psoriasis, and other autoimmune conditions with precision immunomodulation.
             </p>
             <Link
               href="/upload-prescription"
-              className="inline-block bg-white text-primary px-8 py-4 rounded-md font-semibold hover:bg-gray-100 transition text-lg"
+              className="inline-flex items-center justify-center gap-2 bg-white text-primary px-8 py-4 rounded-xl font-bold text-lg hover:shadow-2xl transition-all duration-300"
             >
               Upload Your Prescription
             </Link>
@@ -162,7 +162,7 @@ export default function SpecialtyBiologics() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl font-bold text-primary mb-6">What are biologic therapies?</h2>
-              <div className="space-y-4 text-gray-700">
+              <div className="space-y-4 text-gray-900">
                 <p>
                   Biologic medications are engineered proteins derived from living cells that target specific components of the immune system. Unlike conventional immunosuppressants, biologics precisely modulate inflammatory pathways with reduced systemic toxicity.
                 </p>
@@ -181,28 +181,28 @@ export default function SpecialtyBiologics() {
                   <div className="w-3 h-3 bg-primary rounded-full mt-1.5 mr-3 flex-shrink-0"></div>
                   <div>
                     <div className="font-semibold text-gray-900">FDA Approved</div>
-                    <div className="text-sm text-gray-600">Rigorous regulatory approval for multiple autoimmune indications</div>
+                    <div className="text-sm text-gray-900">Rigorous regulatory approval for multiple autoimmune indications</div>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <div className="w-3 h-3 bg-primary rounded-full mt-1.5 mr-3 flex-shrink-0"></div>
                   <div>
                     <div className="font-semibold text-gray-900">Extensively Studied</div>
-                    <div className="text-sm text-gray-600">Decades of clinical trials with over 100,000 patient-years of safety data</div>
+                    <div className="text-sm text-gray-900">Decades of clinical trials with over 100,000 patient-years of safety data</div>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <div className="w-3 h-3 bg-primary rounded-full mt-1.5 mr-3 flex-shrink-0"></div>
                   <div>
                     <div className="font-semibold text-gray-900">Disease-Modifying</div>
-                    <div className="text-sm text-gray-600">Prevents irreversible joint damage and organ complications</div>
+                    <div className="text-sm text-gray-900">Prevents irreversible joint damage and organ complications</div>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <div className="w-3 h-3 bg-primary rounded-full mt-1.5 mr-3 flex-shrink-0"></div>
                   <div>
                     <div className="font-semibold text-gray-900">Cold Chain Required</div>
-                    <div className="text-sm text-gray-600">Temperature-controlled storage (2-8°C) to maintain protein stability</div>
+                    <div className="text-sm text-gray-900">Temperature-controlled storage (2-8°C) to maintain protein stability</div>
                   </div>
                 </div>
               </div>
@@ -216,7 +216,7 @@ export default function SpecialtyBiologics() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-primary mb-4">Mechanisms of action</h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-900 max-w-3xl mx-auto">
               Biologics work through targeted immunomodulation at the molecular level
             </p>
           </div>
@@ -227,7 +227,7 @@ export default function SpecialtyBiologics() {
                   {mechanism.icon}
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4">{mechanism.title}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{mechanism.description}</p>
+                <p className="text-gray-900 text-sm leading-relaxed">{mechanism.description}</p>
               </div>
             ))}
           </div>
@@ -239,7 +239,7 @@ export default function SpecialtyBiologics() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-primary mb-4">Biologic medication classes</h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-900 max-w-3xl mx-auto">
               Different therapeutic targets for various autoimmune conditions
             </p>
           </div>
@@ -250,11 +250,11 @@ export default function SpecialtyBiologics() {
                 <div className="space-y-2">
                   <div>
                     <div className="text-sm font-semibold text-gray-900">Medications:</div>
-                    <div className="text-sm text-gray-700">{biologic.medications}</div>
+                    <div className="text-sm text-gray-900">{biologic.medications}</div>
                   </div>
                   <div>
                     <div className="text-sm font-semibold text-gray-900">Indications:</div>
-                    <div className="text-sm text-gray-700">{biologic.indications}</div>
+                    <div className="text-sm text-gray-900">{biologic.indications}</div>
                   </div>
                 </div>
               </div>
@@ -268,7 +268,7 @@ export default function SpecialtyBiologics() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-primary mb-4">Clinical evidence</h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-900 max-w-3xl mx-auto">
               Robust clinical trials demonstrating efficacy and safety across autoimmune conditions
             </p>
           </div>
@@ -281,18 +281,18 @@ export default function SpecialtyBiologics() {
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-primary">{study.results}</div>
-                    <div className="text-sm text-gray-600 mt-1">Primary Outcome</div>
+                    <div className="text-sm text-gray-900 mt-1">Primary Outcome</div>
                   </div>
                   <div className="text-center">
                     <div className="text-lg font-bold text-gray-900">{study.participants}</div>
-                    <div className="text-sm text-gray-600 mt-1">Study Size</div>
+                    <div className="text-sm text-gray-900 mt-1">Study Size</div>
                   </div>
                   <div className="text-center">
                     <div className="text-lg font-bold text-gray-900">{study.duration}</div>
-                    <div className="text-sm text-gray-600 mt-1">Duration</div>
+                    <div className="text-sm text-gray-900 mt-1">Duration</div>
                   </div>
                 </div>
-                <p className="text-gray-700">{study.findings}</p>
+                <p className="text-gray-900">{study.findings}</p>
               </div>
             ))}
           </div>
@@ -304,7 +304,7 @@ export default function SpecialtyBiologics() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-primary mb-4">Clinical outcomes</h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-900 max-w-3xl mx-auto">
               Biologic therapies provide transformative outcomes backed by clinical data
             </p>
           </div>
@@ -313,7 +313,7 @@ export default function SpecialtyBiologics() {
               <div key={index} className="bg-novo-gray p-8 rounded-lg text-center">
                 <div className="text-4xl font-bold text-primary mb-3">{benefit.value}</div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{benefit.metric}</h3>
-                <p className="text-gray-600 text-sm">{benefit.description}</p>
+                <p className="text-gray-900 text-sm">{benefit.description}</p>
               </div>
             ))}
           </div>
@@ -325,7 +325,7 @@ export default function SpecialtyBiologics() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-primary mb-4">Safety & monitoring</h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-900 max-w-3xl mx-auto">
               Understanding risks and clinical monitoring protocols
             </p>
           </div>
@@ -337,7 +337,7 @@ export default function SpecialtyBiologics() {
                   <svg className="w-5 h-5 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <div className="text-gray-800">
+                  <div className="text-gray-900">
                     <span className="font-semibold">Injection site reactions</span> - Local erythema, mild discomfort (usually resolves within 3-5 days)
                   </div>
                 </li>
@@ -345,7 +345,7 @@ export default function SpecialtyBiologics() {
                   <svg className="w-5 h-5 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <div className="text-gray-800">
+                  <div className="text-gray-900">
                     <span className="font-semibold">Upper respiratory infections</span> - Increased susceptibility, typically mild
                   </div>
                 </li>
@@ -353,7 +353,7 @@ export default function SpecialtyBiologics() {
                   <svg className="w-5 h-5 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <div className="text-gray-800">
+                  <div className="text-gray-900">
                     <span className="font-semibold">Infusion reactions</span> - Managed with premedication protocols
                   </div>
                 </li>
@@ -361,7 +361,7 @@ export default function SpecialtyBiologics() {
                   <svg className="w-5 h-5 text-green-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <div className="text-gray-800">
+                  <div className="text-gray-900">
                     <span className="font-semibold">Mild laboratory abnormalities</span> - Monitored through routine blood work
                   </div>
                 </li>
@@ -374,7 +374,7 @@ export default function SpecialtyBiologics() {
                   <svg className="w-5 h-5 text-yellow-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                   </svg>
-                  <div className="text-gray-800">
+                  <div className="text-gray-900">
                     <span className="font-semibold">Serious infections</span> - TB screening required; monitor for opportunistic infections
                   </div>
                 </li>
@@ -382,7 +382,7 @@ export default function SpecialtyBiologics() {
                   <svg className="w-5 h-5 text-yellow-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                   </svg>
-                  <div className="text-gray-800">
+                  <div className="text-gray-900">
                     <span className="font-semibold">Hepatitis B reactivation</span> - Screening and prophylaxis for at-risk patients
                   </div>
                 </li>
@@ -390,7 +390,7 @@ export default function SpecialtyBiologics() {
                   <svg className="w-5 h-5 text-yellow-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                   </svg>
-                  <div className="text-gray-800">
+                  <div className="text-gray-900">
                     <span className="font-semibold">Malignancy risk</span> - Long-term surveillance for lymphoma and solid tumors
                   </div>
                 </li>
@@ -398,7 +398,7 @@ export default function SpecialtyBiologics() {
                   <svg className="w-5 h-5 text-yellow-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                   </svg>
-                  <div className="text-gray-800">
+                  <div className="text-gray-900">
                     <span className="font-semibold">Cardiovascular events</span> - Risk assessment for JAK inhibitors (black box warning)
                   </div>
                 </li>
@@ -406,7 +406,7 @@ export default function SpecialtyBiologics() {
             </div>
           </div>
           <div className="mt-8 bg-blue-50 border border-blue-200 rounded-lg p-6">
-            <p className="text-gray-700 text-center">
+            <p className="text-gray-900 text-center">
               <strong>Clinical Monitoring Protocol:</strong> Regular laboratory monitoring including CBC, liver function, lipid panel, and infection screening ensures early detection and management of potential adverse effects.
             </p>
           </div>
@@ -417,19 +417,19 @@ export default function SpecialtyBiologics() {
       <section className="py-20 bg-primary text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-6">Access specialty biologic therapies</h2>
-          <p className="text-xl mb-8 text-blue-100">
+          <p className="text-xl mb-8 text-white/95">
             Expert clinical support, cold chain delivery, and prior authorization assistance for your specialty medication
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/upload-prescription"
-              className="bg-white text-primary px-8 py-4 rounded-md font-semibold hover:bg-gray-100 transition text-lg"
+              className="inline-flex items-center justify-center gap-2 bg-white text-primary px-8 py-4 rounded-xl font-bold text-lg hover:shadow-2xl transition-all duration-300"
             >
               Upload Your Prescription
             </Link>
             <Link
               href="/reviews"
-              className="border-2 border-white text-white px-8 py-4 rounded-md font-semibold hover:bg-white hover:text-primary transition text-lg"
+              className="inline-flex items-center justify-center gap-2 border-2 border-white/50 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-primary transition-all duration-300 backdrop-blur-sm"
             >
               Read Patient Stories
             </Link>

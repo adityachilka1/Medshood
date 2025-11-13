@@ -18,7 +18,7 @@ export const QuizResults: React.FC<QuizResultsProps> = ({ formData }) => {
         <h2 className="text-4xl font-bold text-primary mb-4">
           Assessment Complete!
         </h2>
-        <p className="text-xl text-gray-700">
+        <p className="text-xl text-gray-900">
           Here's what we found based on your information
         </p>
       </div>
@@ -27,7 +27,7 @@ export const QuizResults: React.FC<QuizResultsProps> = ({ formData }) => {
       <div className="bg-blue-50 border-2 border-primary rounded-xl p-6">
         <h3 className="text-lg font-semibold text-gray-900 mb-2">Your BMI</h3>
         <p className="text-5xl font-bold text-primary">{bmi}</p>
-        <p className="text-gray-700 mt-2">
+        <p className="text-gray-900 mt-2">
           {bmi < 18.5 && 'Underweight'}
           {bmi >= 18.5 && bmi < 25 && 'Normal weight'}
           {bmi >= 25 && bmi < 30 && 'Overweight'}
@@ -89,7 +89,7 @@ export const QuizResults: React.FC<QuizResultsProps> = ({ formData }) => {
               </p>
               <div className="bg-white rounded-lg p-4 mb-4">
                 <h4 className="font-semibold text-gray-900 mb-2">Eligibility Criteria:</h4>
-                <ul className="space-y-1 text-gray-700 text-sm">
+                <ul className="space-y-1 text-gray-900 text-sm">
                   <li>• BMI of 30 or higher, OR</li>
                   <li>• BMI of 27+ with weight-related medical conditions</li>
                   <li>• Age 18 or older</li>
@@ -114,10 +114,10 @@ export const QuizResults: React.FC<QuizResultsProps> = ({ formData }) => {
         <h3 className="text-2xl font-bold text-gray-900 mb-4">Next Steps</h3>
         {eligible ? (
           <div className="space-y-4">
-            <p className="text-gray-700">
+            <p className="text-gray-900">
               Great news! You're eligible for our programme. Here's what happens next:
             </p>
-            <ol className="list-decimal list-inside space-y-2 text-gray-700">
+            <ol className="list-decimal list-inside space-y-2 text-gray-900">
               <li>Schedule a consultation with our licensed doctor</li>
               <li>Discuss your health history and treatment goals</li>
               <li>Receive your prescription (if medically appropriate)</li>
@@ -134,7 +134,7 @@ export const QuizResults: React.FC<QuizResultsProps> = ({ formData }) => {
           </div>
         ) : (
           <div className="space-y-4">
-            <p className="text-gray-700">
+            <p className="text-gray-900">
               While you're not eligible for GLP-1 treatment right now, we're here to support your health journey.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -150,7 +150,7 @@ export const QuizResults: React.FC<QuizResultsProps> = ({ formData }) => {
       </div>
 
       {/* Privacy Note */}
-      <div className="bg-gray-50 rounded-lg p-4 text-sm text-gray-700">
+      <div className="bg-gray-50 rounded-lg p-4 text-sm text-gray-900">
         <p>
           <strong>Privacy Notice:</strong> Your information is confidential and protected under healthcare privacy regulations.
           We will only use this data to assess your eligibility and provide medical care if you proceed with treatment.

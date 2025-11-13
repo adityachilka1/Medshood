@@ -121,10 +121,10 @@ export default function UploadPrescriptionPage() {
         {uploadStep === 'upload' && (
           <div className="animate-fade-in-up">
             <div className="text-center mb-8">
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">
+              <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
                 <span className="gradient-text">Upload Your Prescription</span>
               </h1>
-              <p className="text-xl text-gray-800">
+              <p className="text-xl text-gray-900">
                 Our licensed pharmacists will verify and process your prescription within 2 hours
               </p>
             </div>
@@ -143,7 +143,7 @@ export default function UploadPrescriptionPage() {
                   <UploadIcon className="w-16 h-16 mx-auto text-primary" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Drop your prescription here</h3>
-                <p className="text-gray-800 mb-6">
+                <p className="text-gray-900 mb-6">
                   or click to browse from your device
                 </p>
                 <input
@@ -153,6 +153,8 @@ export default function UploadPrescriptionPage() {
                   accept="image/*,.pdf"
                   onChange={handleFileSelect}
                   className="hidden"
+                  id="prescription-upload"
+                  aria-label="Upload prescription files (images or PDF)"
                 />
                 <button
                   onClick={() => fileInputRef.current?.click()}
@@ -212,7 +214,7 @@ export default function UploadPrescriptionPage() {
                     <UploadIcon className="w-8 h-8 text-primary" />
                   </div>
                   <h4 className="font-bold text-gray-900 mb-2">1. Upload</h4>
-                  <p className="text-sm text-gray-800">
+                  <p className="text-sm text-gray-900">
                     Upload clear photos of your prescription
                   </p>
                 </div>
@@ -221,7 +223,7 @@ export default function UploadPrescriptionPage() {
                     <DoctorIcon className="w-8 h-8 text-primary" />
                   </div>
                   <h4 className="font-bold text-gray-900 mb-2">2. Verification</h4>
-                  <p className="text-sm text-gray-800">
+                  <p className="text-sm text-gray-900">
                     Pharmacist verifies within 2 hours
                   </p>
                 </div>
@@ -230,7 +232,7 @@ export default function UploadPrescriptionPage() {
                     <PackageIcon className="w-8 h-8 text-primary" />
                   </div>
                   <h4 className="font-bold text-gray-900 mb-2">3. Delivery</h4>
-                  <p className="text-sm text-gray-800">
+                  <p className="text-sm text-gray-900">
                     Medicines delivered in 24-48 hours
                   </p>
                 </div>
@@ -239,7 +241,7 @@ export default function UploadPrescriptionPage() {
 
             {/* Alternative Option */}
             <div className="mt-8 text-center">
-              <p className="text-gray-800 mb-4">
+              <p className="text-gray-900 mb-4">
                 Don't have a prescription? Browse our medicine categories
               </p>
               <Link
@@ -256,10 +258,10 @@ export default function UploadPrescriptionPage() {
         {uploadStep === 'details' && (
           <div className="animate-fade-in-up">
             <div className="text-center mb-8">
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">
+              <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
                 <span className="gradient-text">Delivery Details</span>
               </h1>
-              <p className="text-xl text-gray-800">
+              <p className="text-xl text-gray-900">
                 Where should we deliver your medicines?
               </p>
             </div>
@@ -267,87 +269,113 @@ export default function UploadPrescriptionPage() {
             <form onSubmit={handleSubmit} className="bg-white rounded-2xl shadow-lg p-8">
               <div className="grid md:grid-cols-2 gap-6 mb-6">
                 <div>
-                  <label className="block font-semibold mb-2">Full Name *</label>
+                  <label htmlFor="fullName" className="block font-semibold mb-2">Full Name *</label>
                   <input
                     type="text"
+                    id="fullName"
+                    name="fullName"
                     required
                     value={patientDetails.fullName}
                     onChange={(e) => handleDetailsChange('fullName', e.target.value)}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
                     placeholder="Enter your full name"
+                    aria-required="true"
                   />
                 </div>
                 <div>
-                  <label className="block font-semibold mb-2">Phone Number *</label>
+                  <label htmlFor="phone" className="block font-semibold mb-2">Phone Number *</label>
                   <input
                     type="tel"
+                    id="phone"
+                    name="phone"
                     required
+                    pattern="[0-9]{10}"
                     value={patientDetails.phone}
                     onChange={(e) => handleDetailsChange('phone', e.target.value)}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
                     placeholder="10-digit mobile number"
+                    aria-required="true"
+                    aria-describedby="phone-help"
                   />
+                  <p id="phone-help" className="sr-only">Enter 10-digit mobile number without country code</p>
                 </div>
               </div>
 
               <div className="mb-6">
-                <label className="block font-semibold mb-2">Email Address *</label>
+                <label htmlFor="email" className="block font-semibold mb-2">Email Address *</label>
                 <input
                   type="email"
+                  id="email"
+                  name="email"
                   required
                   value={patientDetails.email}
                   onChange={(e) => handleDetailsChange('email', e.target.value)}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
                   placeholder="your.email@example.com"
+                  aria-required="true"
                 />
               </div>
 
               <div className="mb-6">
-                <label className="block font-semibold mb-2">Delivery Address *</label>
+                <label htmlFor="address" className="block font-semibold mb-2">Delivery Address *</label>
                 <textarea
+                  id="address"
+                  name="address"
                   required
                   value={patientDetails.address}
                   onChange={(e) => handleDetailsChange('address', e.target.value)}
                   rows={3}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
                   placeholder="House/Flat No., Building Name, Street"
+                  aria-required="true"
                 />
               </div>
 
               <div className="grid md:grid-cols-3 gap-6 mb-8">
                 <div>
-                  <label className="block font-semibold mb-2">City *</label>
+                  <label htmlFor="city" className="block font-semibold mb-2">City *</label>
                   <input
                     type="text"
+                    id="city"
+                    name="city"
                     required
                     value={patientDetails.city}
                     onChange={(e) => handleDetailsChange('city', e.target.value)}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
                     placeholder="City"
+                    aria-required="true"
                   />
                 </div>
                 <div>
-                  <label className="block font-semibold mb-2">State *</label>
+                  <label htmlFor="state" className="block font-semibold mb-2">State *</label>
                   <input
                     type="text"
+                    id="state"
+                    name="state"
                     required
                     value={patientDetails.state}
                     onChange={(e) => handleDetailsChange('state', e.target.value)}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
                     placeholder="State"
+                    aria-required="true"
                   />
                 </div>
                 <div>
-                  <label className="block font-semibold mb-2">Pincode *</label>
+                  <label htmlFor="pincode" className="block font-semibold mb-2">Pincode *</label>
                   <input
                     type="text"
+                    id="pincode"
+                    name="pincode"
                     required
                     pattern="[0-9]{6}"
                     value={patientDetails.pincode}
                     onChange={(e) => handleDetailsChange('pincode', e.target.value)}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
                     placeholder="6-digit PIN"
+                    aria-required="true"
+                    aria-describedby="pincode-help"
                   />
+                  <p id="pincode-help" className="sr-only">Enter 6-digit PIN code for delivery location</p>
                 </div>
               </div>
 
@@ -355,7 +383,7 @@ export default function UploadPrescriptionPage() {
                 <button
                   type="button"
                   onClick={() => setUploadStep('upload')}
-                  className="flex-1 border-2 border-gray-300 text-gray-700 py-4 rounded-xl font-bold hover:bg-gray-50 transition-all"
+                  className="flex-1 border-2 border-gray-300 text-gray-900 py-4 rounded-xl font-bold hover:bg-gray-50 transition-all"
                 >
                   Back
                 </button>
@@ -377,10 +405,10 @@ export default function UploadPrescriptionPage() {
               <div className="bg-green-100 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
                 <CheckIcon className="w-12 h-12 text-green-600" />
               </div>
-              <h1 className="text-4xl font-bold mb-4">
+              <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
                 <span className="gradient-text">Prescription Submitted!</span>
               </h1>
-              <p className="text-xl text-gray-800 mb-8">
+              <p className="text-xl text-gray-900 mb-8">
                 Our licensed pharmacist will verify your prescription within 2 hours
               </p>
 
@@ -409,20 +437,20 @@ export default function UploadPrescriptionPage() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                   href="/"
-                  className="bg-primary text-white px-8 py-4 rounded-xl font-bold hover:bg-primary-dark transition-all"
+                  className="inline-flex items-center justify-center gap-2 bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg hover:shadow-2xl transition-all duration-300"
                 >
                   Back to Home
                 </Link>
                 <Link
                   href="/#categories"
-                  className="border-2 border-primary text-primary px-8 py-4 rounded-xl font-bold hover:bg-blue-50 transition-all"
+                  className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-50 transition-all duration-300"
                 >
                   Browse Medicines
                 </Link>
               </div>
 
               <div className="mt-8 pt-8 border-t border-gray-200">
-                <p className="text-gray-800">
+                <p className="text-gray-900">
                   Questions? Call us at{' '}
                   <a href="tel:+918800000000" className="text-primary font-bold">
                     +91 88000 00000
@@ -440,19 +468,19 @@ export default function UploadPrescriptionPage() {
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-3xl font-bold mb-2">100%</div>
-              <div className="text-blue-200">Authentic Medicines</div>
+              <div className="text-white/90">Authentic Medicines</div>
             </div>
             <div>
               <div className="text-3xl font-bold mb-2">&lt;2hr</div>
-              <div className="text-blue-200">Verification Time</div>
+              <div className="text-white/90">Verification Time</div>
             </div>
             <div>
               <div className="text-3xl font-bold mb-2">24-48hr</div>
-              <div className="text-blue-200">Fast Delivery</div>
+              <div className="text-white/90">Fast Delivery</div>
             </div>
             <div>
               <div className="text-3xl font-bold mb-2">Licensed</div>
-              <div className="text-blue-200">Pharmacists</div>
+              <div className="text-white/90">Pharmacists</div>
             </div>
           </div>
         </div>

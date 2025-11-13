@@ -1,4 +1,5 @@
 import {
+  RheumatologyIcon,
   DiabetesIcon,
   HeartIcon,
   CancerRibbonIcon,
@@ -17,7 +18,7 @@ export const MEDICAL_CATEGORIES: MedicalCategory[] = [
     name: 'Rheumatology',
     slug: 'rheumatology',
     description: 'Biologics for rheumatoid arthritis, psoriatic arthritis, ankylosing spondylitis, and autoimmune conditions',
-    Icon: DiabetesIcon,
+    Icon: RheumatologyIcon,
     colorCode: '#3B82F6',
     gradientFrom: 'from-blue-500',
     gradientTo: 'to-blue-600',
@@ -67,7 +68,7 @@ export const MEDICAL_CATEGORIES: MedicalCategory[] = [
   {
     id: 'hemophilia',
     name: 'Hemophilia & Bleeding Disorders',
-    slug: 'hemophilia',
+    slug: 'hemophilia-bleeding-disorders',
     description: 'Factor replacement therapy, gene therapy, and bleeding disorder management',
     Icon: KidneyIcon,
     colorCode: '#14B8A6',
@@ -80,7 +81,7 @@ export const MEDICAL_CATEGORIES: MedicalCategory[] = [
   {
     id: 'inflammatory-bowel',
     name: 'Inflammatory Bowel Disease',
-    slug: 'inflammatory-bowel',
+    slug: 'inflammatory-bowel-disease',
     description: 'Biologics for Crohn\'s disease, ulcerative colitis, and IBD therapy management',
     Icon: LungsIcon,
     colorCode: '#06B6D4',
@@ -106,7 +107,7 @@ export const MEDICAL_CATEGORIES: MedicalCategory[] = [
   {
     id: 'hiv-aids',
     name: 'HIV/AIDS Care',
-    slug: 'hiv-aids',
+    slug: 'hiv-aids-care',
     description: 'Antiretroviral therapy, PrEP medications, and HIV treatment solutions',
     Icon: VirusIcon,
     colorCode: '#EC4899',
@@ -115,6 +116,19 @@ export const MEDICAL_CATEGORIES: MedicalCategory[] = [
     displayOrder: 8,
     isActive: true,
     medicineCount: 180,
+  },
+  {
+    id: 'diabetes-endocrine',
+    name: 'Diabetes & Endocrine Care',
+    slug: 'diabetes-endocrine-care',
+    description: 'Injectable insulins, GLP-1 agonists (Ozempic, Mounjaro, Wegovy), SGLT2 inhibitors, oral medications, and CGM supplies',
+    Icon: DiabetesIcon,
+    colorCode: '#F59E0B',
+    gradientFrom: 'from-amber-500',
+    gradientTo: 'to-amber-600',
+    displayOrder: 9,
+    isActive: true,
+    medicineCount: 50,
   },
 ];
 
@@ -139,18 +153,18 @@ export const getCategoryById = (id: string): MedicalCategory | undefined => {
 
 // Platform Stats
 export const PLATFORM_STATS = [
-  { value: '500+', label: 'Specialty Medications', sublabel: 'rare disease & complex therapies' },
-  { value: '24/7', label: 'Clinical Support', sublabel: 'specialty-trained pharmacists' },
-  { value: '2-8°C', label: 'Cold Chain Delivery', sublabel: 'temperature controlled' },
-  { value: '100%', label: 'Prior Auth Assistance', sublabel: 'insurance support included' },
+  { value: '5,000+', label: 'Specialty Medications', sublabel: 'rare disease & imported therapies' },
+  { value: '50,000+', label: 'Patients Served', sublabel: 'across 2,500+ cities' },
+  { value: '24 Hrs', label: 'Metro Delivery', sublabel: 'next-day in tier-2/tier-3 cities' },
+  { value: 'Upto 85%', label: 'Savings on Medicines', sublabel: 'competitive pricing guaranteed' },
 ];
 
 // Trust Badges
 export const TRUST_BADGES = [
-  { text: 'Authentic Medicines', icon: '✓' },
-  { text: 'Up to 70% Savings', icon: '✓' },
-  { text: 'Licensed Pharmacists', icon: '✓' },
-  { text: 'Secure & Private', icon: '✓' },
-  { text: 'Pan-India Delivery', icon: '✓' },
-  { text: 'Easy Returns', icon: '✓' },
+  { text: '100% Authentic Medicines', icon: '✓' },
+  { text: 'Upto 85% Savings', icon: '✓' },
+  { text: 'Cold Chain Certified', icon: '✓' },
+  { text: 'Pan-India Coverage', icon: '✓' },
+  { text: 'COD & Multiple Payment Options', icon: '✓' },
+  { text: 'Imported Medicines Available', icon: '✓' },
 ];

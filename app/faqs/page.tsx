@@ -5,65 +5,65 @@ import Link from "next/link";
 export default function FAQs() {
   const faqCategories = [
     {
-      category: "About Treatment",
+      category: "About Medshood",
       questions: [
         {
           q: "What is Medshood?",
-          a: "Medshood is a comprehensive medical weight loss programme that combines FDA-approved GLP-1 medications with doctor supervision, nutrition coaching, and fitness guidance. We provide everything you need for sustainable weight loss in one convenient online platform."
+          a: "Medshood is India's leading super specialty pharmacy providing biologic therapies, rare disease medications, and imported specialty drugs. We focus on complex conditions including oncology, rheumatology, rare diseases, and chronic conditions requiring specialized medications and clinical support."
         },
         {
-          q: "How does GLP-1 medication work for weight loss?",
-          a: "GLP-1 medications mimic a natural hormone in your body that regulates appetite and blood sugar. They work by reducing hunger, increasing feelings of fullness, slowing digestion, and improving blood sugar control. This combination helps you eat less naturally and lose weight sustainably."
+          q: "What types of medications do you provide?",
+          a: "We specialize in high-value, temperature-sensitive medications including biologics, biosimilars, immunosuppressants, targeted cancer therapies, rare disease treatments, and imported specialty medications. We maintain cold chain facilities (2-8°C) and provide 500+ specialty medications across 8 therapeutic areas."
         },
         {
-          q: "How much weight can I expect to lose?",
-          a: "Clinical studies show an average weight loss of 15-20% of body weight over 12 months with GLP-1 medications. For example, someone weighing 100 kg could expect to lose 15-20 kg. Individual results vary based on adherence, lifestyle factors, and metabolism."
+          q: "How is Medshood different from regular pharmacies?",
+          a: "Unlike regular pharmacies, we specialize in complex specialty medications that require expert handling, cold chain storage, prior authorization support, clinical coordination, and patient assistance programs. Our pharmacists are specially trained in biologic therapies and rare disease management."
         },
         {
-          q: "How long does it take to see results?",
-          a: "Most people notice reduced appetite within the first week. Visible weight loss typically begins in the first month (3-5%), with significant results appearing by month 3 (5-10%). Maximum weight loss is usually achieved by 12-16 months of continuous treatment."
+          q: "Where do you operate?",
+          a: "We serve metros, tier-2, and tier-3 cities across India with nationwide cold chain delivery. Our 24/7 customer support and clinical team are available pan-India to assist patients with specialty medication needs."
         }
       ]
     },
     {
-      category: "Eligibility",
+      category: "Ordering & Prescriptions",
       questions: [
         {
-          q: "Am I eligible for GLP-1 treatment?",
-          a: "You may be eligible if you: (1) Have a BMI of 27+ with weight-related health conditions (diabetes, high blood pressure, etc.), or (2) Have a BMI of 30+, and (3) Are 18 years or older. Complete our quiz to check your eligibility - a doctor will make the final determination."
+          q: "Do I need a prescription to order?",
+          a: "Yes, all specialty medications require a valid prescription from a licensed physician. You can upload your prescription through our website, WhatsApp, or email. Our licensed pharmacists verify every prescription before dispensing."
         },
         {
-          q: "What medical conditions make me ineligible?",
-          a: "GLP-1 medications may not be suitable if you have: personal or family history of medullary thyroid cancer, multiple endocrine neoplasia syndrome type 2, pancreatitis, severe kidney disease, or if you're pregnant or breastfeeding. Your doctor will review your full medical history."
+          q: "What if I don't have a prescription?",
+          a: "Browse our therapeutic areas to find medications for your condition, then consult your doctor for a prescription. We can also help connect you with specialist physicians for consultation if needed."
         },
         {
-          q: "Can I use Medshood if I have diabetes?",
-          a: "Yes! GLP-1 medications were originally developed for type 2 diabetes. They can help with both blood sugar control and weight loss. However, you'll need to inform your doctor about all diabetes medications you're taking to avoid interactions."
+          q: "How do I upload my prescription?",
+          a: "Upload your prescription via our website (Upload Prescription page), WhatsApp (+91-XXXX-XXXXXX), or email (prescriptions@medshood.com). Accepted formats include JPG, PNG, and PDF. Our pharmacists verify prescriptions within 2 hours."
         },
         {
-          q: "Do I need a referral from my primary doctor?",
-          a: "No referral is needed. Our licensed physicians can evaluate you independently. However, we recommend informing your primary care doctor about starting any new treatment to ensure coordinated care."
+          q: "Can I order imported medications?",
+          a: "Yes, we source and supply imported specialty medications that may not be readily available in India. We handle import documentation, customs clearance, and ensure proper cold chain throughout the process."
         }
       ]
     },
     {
-      category: "Medication",
+      category: "Delivery & Storage",
       questions: [
         {
-          q: "What medications do you offer?",
-          a: "We offer two FDA-approved GLP-1 medications: Semaglutide (Wegovy/Ozempic) and Tirzepatide (Mounjaro/Zepbound). Your doctor will recommend the best option based on your medical history, goals, and insurance coverage."
+          q: "How fast is delivery?",
+          a: "Metro cities: 24 hours delivery. Tier-2 cities: 24-48 hours. Tier-3 cities: 2-3 days. All cold chain medications are shipped with temperature monitoring devices and insulated packaging to maintain 2-8°C throughout transit."
         },
         {
-          q: "How do I take the medication?",
-          a: "Both medications are self-administered via a small injection once weekly. The injection uses a tiny needle (similar to insulin pens) and goes into the fatty tissue of your abdomen, thigh, or upper arm. Most patients find it quick and painless after the first few times."
+          q: "How do you maintain cold chain?",
+          a: "We use WHO-GDP certified cold chain logistics with temperature-controlled vehicles, insulated packaging, ice gel packs, and real-time temperature monitoring. Every shipment includes a temperature log to verify proper storage conditions."
         },
         {
-          q: "What are the side effects?",
-          a: "Common side effects include nausea, diarrhea, constipation, and reduced appetite, especially when starting or increasing dosage. These typically improve within 2-4 weeks. Rare but serious side effects include pancreatitis and gallbladder problems. Your doctor will monitor you closely."
+          q: "What if my medication arrives damaged?",
+          a: "Contact us immediately at +91-XXXX-XXXXXX. We'll replace damaged medications at no cost. Every shipment includes temperature monitoring - if the cold chain was compromised, we'll send a replacement immediately."
         },
         {
-          q: "Can I take GLP-1 with other medications?",
-          a: "Generally yes, but some medications require special consideration. Be sure to tell your doctor about ALL medications and supplements you take. GLP-1 can slow digestion, which may affect absorption of other medications."
+          q: "Can I track my order?",
+          a: "Yes, you'll receive SMS/WhatsApp tracking updates at every stage: prescription verification, order processing, dispatch, in-transit, and delivery. Call our 24/7 helpline for real-time status updates."
         }
       ]
     },
@@ -71,176 +71,165 @@ export default function FAQs() {
       category: "Pricing & Payment",
       questions: [
         {
-          q: "How much does Medshood cost?",
-          a: "Plans start from ₹12,000/month and include: GLP-1 medication, doctor consultations, nutrition coaching, fitness guidance, progress tracking tools, and 24/7 support. Pricing varies based on medication type and dosage. We offer monthly, quarterly, and annual plans."
+          q: "Are specialty medications expensive?",
+          a: "Specialty medications are often high-cost due to their complexity and manufacturing requirements. However, Medshood offers up to 85% savings compared to retail prices through our partnerships, bulk procurement, and patient assistance programs."
         },
         {
-          q: "Does insurance cover the cost?",
-          a: "Some insurance plans cover GLP-1 medications for weight loss, especially if you have related health conditions. We provide all necessary documentation for insurance claims, but coverage varies by provider. Check with your insurance company about your specific benefits."
+          q: "Do you accept insurance?",
+          a: "Yes, we accept most health insurance policies and provide all necessary documentation for reimbursement claims. Our team assists with pre-authorization, claim filing, and insurance coordination."
         },
         {
-          q: "Can I cancel my subscription?",
-          a: "Yes, you can cancel anytime without penalties or fees. We recommend consulting with your doctor before stopping treatment to ensure a safe transition and discuss options for maintaining your weight loss."
+          q: "What payment methods do you accept?",
+          a: "We accept Cash on Delivery (COD), credit/debit cards, UPI, net banking, and digital wallets. For high-value medications, we also offer EMI options and payment plans through our financial partners."
         },
         {
-          q: "Do you offer refunds?",
-          a: "We offer a 90-day money-back guarantee. If you don't see results after following the programme for 90 days, we'll refund your medication costs. Consultation fees are non-refundable as they cover actual medical services provided."
+          q: "Do you offer patient assistance programs?",
+          a: "Yes, we help patients access manufacturer patient assistance programs (PAPs) that can provide free or discounted medications for eligible patients. Our team guides you through the application process and documentation."
         }
       ]
     },
     {
-      category: "Delivery & Logistics",
+      category: "Clinical Support",
       questions: [
         {
-          q: "Where do you deliver?",
-          a: "We currently deliver across India to all major cities and most tier-2 and tier-3 cities. Enter your PIN code during checkout to confirm delivery availability in your area. Delivery typically takes 3-5 business days."
+          q: "Do you provide clinical support?",
+          a: "Yes, our clinical team includes specialized pharmacists trained in biologic therapies, oncology, and rare diseases. We provide medication counseling, side effect management guidance, injection training, and adherence support."
         },
         {
-          q: "How is the medication packaged?",
-          a: "Medications are shipped in temperature-controlled, insulated packaging to maintain proper storage conditions. Packages are discreet with no indication of medical contents. Each shipment includes ice packs and temperature monitors to ensure medication integrity."
+          q: "Can you help with prior authorization?",
+          a: "Absolutely. Prior authorization for specialty medications can be complex. Our dedicated team manages the entire process including documentation submission, insurance coordination, and follow-up with physicians and insurers."
         },
         {
-          q: "What if I'm not home for delivery?",
-          a: "Delivery partners will attempt delivery 2-3 times. We'll send you tracking information so you can coordinate. If you'll be away, you can reschedule your shipment through your member dashboard or contact support."
+          q: "Do you offer home injection training?",
+          a: "Yes, for self-injectable biologics, we provide home training by qualified nurses. We demonstrate proper injection technique, storage handling, sharps disposal, and side effect monitoring. Training is free with your first order."
         },
         {
-          q: "How do I store the medication?",
-          a: "Unopened pens should be refrigerated at 2-8°C (36-46°F). Once in use, pens can be kept at room temperature (up to 30°C/86°F) for up to 4 weeks. Never freeze. Detailed storage instructions come with each shipment."
+          q: "What if I experience side effects?",
+          a: "Contact our 24/7 clinical helpline immediately. Our pharmacists can provide guidance on managing common side effects. For serious adverse events, we'll coordinate with your physician and help you access emergency care if needed."
         }
       ]
     },
     {
-      category: "Support & Monitoring",
+      category: "Therapeutic Areas",
       questions: [
         {
-          q: "How often will I see a doctor?",
-          a: "You'll have an initial consultation, then follow-up check-ins every 4 weeks for the first 3 months, then every 8-12 weeks thereafter. Additional consultations are available anytime if you have concerns or need dosage adjustments."
+          q: "What therapeutic areas do you cover?",
+          a: "We specialize in 8 therapeutic areas: Rheumatology (arthritis, lupus), Rare Diseases (Gaucher, Fabry), Cancer Care (targeted therapies, biologics), Neurology (MS, epilepsy), Gastroenterology (IBD, Crohn's), Cardiology (pulmonary hypertension), Respiratory (severe asthma), and Endocrinology (growth disorders)."
         },
         {
-          q: "What kind of support do I get?",
-          a: "Your programme includes: monthly doctor check-ins, personalized meal plans, fitness coaching, progress tracking tools, educational resources, and 24/7 support team access via messaging, phone, or email."
+          q: "Do you have oncology medications?",
+          a: "Yes, we stock targeted cancer therapies, immunotherapies, supportive care medications, and chemotherapy agents. Our oncology pharmacists provide counseling on administration, side effects, drug interactions, and supportive care measures."
         },
         {
-          q: "Can I contact support outside business hours?",
-          a: "Yes! Our support team is available 24/7 via the member portal messaging system. For urgent medical concerns, we have on-call medical staff available around the clock."
+          q: "Can you supply rare disease medications?",
+          a: "Yes, rare disease medications are our specialty. We source orphan drugs and enzyme replacement therapies that are often difficult to obtain. We handle import documentation and ensure uninterrupted supply for chronic rare disease patients."
         },
         {
-          q: "What if the medication isn't working for me?",
-          a: "If you're not seeing results after 4-8 weeks, your doctor can adjust your dosage or switch medications. Some patients need higher doses or a different medication to achieve optimal results. Regular monitoring helps us optimize your treatment."
-        }
-      ]
-    },
-    {
-      category: "Lifestyle & Diet",
-      questions: [
-        {
-          q: "Do I need to follow a specific diet?",
-          a: "While there's no mandatory diet, we provide personalized meal plans to optimize your results. GLP-1 works best combined with a balanced, nutrient-dense diet. Our nutrition coaches help you make sustainable changes that fit your lifestyle and preferences."
-        },
-        {
-          q: "Do I need to exercise?",
-          a: "Exercise isn't required but is highly recommended for optimal results and overall health. Physical activity helps preserve muscle mass during weight loss, improves cardiovascular health, and enhances mood. We provide customized workout plans based on your fitness level."
-        },
-        {
-          q: "Can I drink alcohol on GLP-1?",
-          a: "Moderate alcohol consumption is generally acceptable, but be aware that alcohol can worsen side effects like nausea. Additionally, alcoholic drinks contain calories that can slow weight loss. Discuss your alcohol consumption with your doctor."
-        },
-        {
-          q: "What happens after I reach my goal weight?",
-          a: "Most patients need to continue treatment at a maintenance dose to prevent weight regain. Your doctor will create a long-term plan, which may include reduced dosing, transitioning to lifestyle maintenance, or continuing full treatment based on your individual needs."
+          q: "Do you stock biologic medications?",
+          a: "Yes, we maintain extensive inventory of biologics including monoclonal antibodies, fusion proteins, biosimilars, and immunomodulators. All biologics are stored in validated cold chain facilities with 24/7 temperature monitoring."
         }
       ]
     }
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Header />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary to-secondary text-white py-20 md:py-28">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-              Frequently Asked Questions
-            </h1>
-            <p className="text-xl mb-8 text-blue-100">
-              Find answers to common questions about Medshood's medical weight loss programme, GLP-1 medications, and how we support your journey.
-            </p>
-            <Link 
-              href="/quiz" 
-              className="inline-block bg-white text-primary px-8 py-4 rounded-md font-semibold hover:bg-gray-100 transition text-lg"
-            >
-              Check Your Eligibility
-            </Link>
+      <div className="bg-gradient-to-br from-primary to-primary-dark text-white py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="inline-block bg-white/90 px-4 py-2 rounded-full text-sm font-semibold mb-6 backdrop-blur-sm text-primary border border-white/30 shadow-lg">
+            FREQUENTLY ASKED QUESTIONS
           </div>
+          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+            Questions About Specialty Pharmacy?
+          </h1>
+          <p className="text-xl md:text-2xl text-white/95 max-w-3xl mx-auto">
+            Find answers to common questions about ordering specialty medications, cold chain delivery, patient assistance programs, and clinical support
+          </p>
         </div>
-      </section>
+      </div>
 
-      {/* Quick Links */}
-      <section className="py-12 bg-novo-gray border-b">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-6">
-            <h2 className="text-lg font-semibold text-primary mb-4">Jump to section:</h2>
-          </div>
-          <div className="flex flex-wrap justify-center gap-3">
-            {faqCategories.map((cat, index) => (
-              <a 
-                key={index}
-                href={`#${cat.category.toLowerCase().replace(/ /g, '-')}`}
-                className="bg-white text-primary px-4 py-2 rounded-md text-sm font-semibold hover:bg-primary hover:text-white transition"
-              >
-                {cat.category}
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ Categories */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          {faqCategories.map((category, catIndex) => (
-            <div key={catIndex} id={category.category.toLowerCase().replace(/ /g, '-')} className="mb-16">
-              <h2 className="text-3xl font-bold text-primary mb-8 border-b-2 border-novo-gray pb-4">
+      {/* FAQ Content */}
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="space-y-12">
+          {faqCategories.map((category, categoryIndex) => (
+            <div key={categoryIndex} className="bg-white rounded-2xl shadow-lg p-8">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                <span className="bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center text-lg">
+                  {categoryIndex + 1}
+                </span>
                 {category.category}
               </h2>
               <div className="space-y-6">
-                {category.questions.map((faq, qIndex) => (
-                  <div key={qIndex} className="bg-novo-gray p-6 rounded-lg">
-                    <h3 className="text-xl font-bold text-gray-900 mb-3">{faq.q}</h3>
-                    <p className="text-gray-700 leading-relaxed">{faq.a}</p>
-                  </div>
+                {category.questions.map((faq, faqIndex) => (
+                  <details
+                    key={faqIndex}
+                    className="group border-b border-gray-200 pb-6 last:border-0"
+                  >
+                    <summary className="flex items-start justify-between cursor-pointer list-none">
+                      <h3 className="text-lg font-bold text-gray-900 pr-4 group-open:text-primary">
+                        {faq.q}
+                      </h3>
+                      <svg
+                        className="w-6 h-6 text-gray-900 group-open:rotate-180 transition-transform flex-shrink-0"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M19 9l-7 7-7-7"
+                        />
+                      </svg>
+                    </summary>
+                    <p className="mt-4 text-gray-900 leading-relaxed">
+                      {faq.a}
+                    </p>
+                  </details>
                 ))}
               </div>
             </div>
           ))}
         </div>
-      </section>
 
-      {/* Still Have Questions */}
-      <section className="py-20 bg-novo-gray">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-primary mb-6">Still have questions?</h2>
-          <p className="text-xl text-gray-700 mb-8">
-            Our support team is here to help. Reach out anytime and we'll get back to you promptly.
+        {/* Contact CTA */}
+        <div className="mt-16 bg-gradient-to-br from-primary to-secondary text-white rounded-2xl p-12 text-center">
+          <h2 className="text-4xl font-bold mb-4">Still Have Questions?</h2>
+          <p className="text-xl text-white/95 mb-8">
+            Our specialty pharmacy experts are available 24/7 to help you
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link 
-              href="/contact" 
-              className="bg-primary text-white px-8 py-4 rounded-md font-semibold hover:bg-secondary transition text-lg"
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center gap-2 bg-white text-primary px-8 py-4 rounded-xl font-bold text-lg hover:shadow-2xl transition-all duration-300"
             >
-              Contact Support
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              Contact Us
             </Link>
-            <Link 
-              href="/quiz" 
-              className="border-2 border-primary text-primary px-8 py-4 rounded-md font-semibold hover:bg-primary hover:text-white transition text-lg"
+            <Link
+              href="/support"
+              className="inline-flex items-center justify-center gap-2 border-2 border-white/50 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-primary transition-all duration-300 backdrop-blur-sm"
             >
-              Get Started
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+              </svg>
+              Help Center
             </Link>
           </div>
+          <p className="mt-8 text-white/90">
+            Call us 24/7:{" "}
+            <a href="tel:+918800000000" className="font-bold hover:underline">
+              +91 88000 00000
+            </a>
+          </p>
         </div>
-      </section>
+      </div>
 
       <Footer />
     </div>

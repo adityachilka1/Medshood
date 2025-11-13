@@ -34,7 +34,7 @@ export const QuizNavigation: React.FC<QuizNavigationProps> = ({
       </Button>
 
       <div className="text-center">
-        <p className="text-sm text-gray-600">
+        <p className="text-sm text-gray-900">
           Step {currentStep} of {totalSteps}
         </p>
         <div className="flex gap-2 mt-2">

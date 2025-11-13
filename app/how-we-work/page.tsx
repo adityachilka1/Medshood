@@ -128,18 +128,18 @@ export default function HowWeWork() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary to-secondary text-white py-20 md:py-28">
+      <section className="relative bg-gradient-to-br from-primary to-primary-dark text-white py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
               How Medshood works
             </h1>
-            <p className="text-xl mb-8 text-blue-100">
+            <p className="text-xl mb-8 text-white leading-relaxed max-w-3xl">
               From your first assessment to ongoing support, we make medical weight loss simple, safe, and effective. Here's exactly what to expect.
             </p>
-            <Link 
-              href="/quiz" 
-              className="inline-block bg-white text-primary px-8 py-4 rounded-md font-semibold hover:bg-gray-100 transition text-lg"
+            <Link
+              href="/quiz"
+              className="inline-flex items-center justify-center gap-2 bg-white text-primary px-8 py-4 rounded-xl font-bold text-lg hover:shadow-2xl transition-all duration-300"
             >
               Get Started Now
             </Link>
@@ -152,7 +152,7 @@ export default function HowWeWork() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-primary mb-4">Your journey, step by step</h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
               Our streamlined process makes it easy to get started and stay on track
             </p>
           </div>
@@ -184,14 +184,14 @@ export default function HowWeWork() {
                         {step.duration}
                       </span>
                     </div>
-                    <p className="text-gray-700 mb-6">{step.description}</p>
+                    <p className="text-gray-700 mb-6 leading-relaxed text-base">{step.description}</p>
                     <div className="grid md:grid-cols-2 gap-3">
                       {step.details.map((detail, dIndex) => (
                         <div key={dIndex} className="flex items-start">
                           <svg className="w-5 h-5 text-primary mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                           </svg>
-                          <span className="text-sm text-gray-700">{detail}</span>
+                          <span className="text-sm text-gray-700 leading-relaxed">{detail}</span>
                         </div>
                       ))}
                     </div>
@@ -208,7 +208,7 @@ export default function HowWeWork() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-primary mb-4">Why our process works</h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
               We've designed every step to ensure your safety, convenience, and success
             </p>
           </div>
@@ -219,7 +219,7 @@ export default function HowWeWork() {
                   {feature.icon}
                 </div>
                 <h3 className="text-lg font-bold text-gray-900 mb-2">{feature.title}</h3>
-                <p className="text-sm text-gray-600">{feature.description}</p>
+                <p className="text-sm text-gray-700 leading-relaxed">{feature.description}</p>
               </div>
             ))}
           </div>
@@ -235,15 +235,15 @@ export default function HowWeWork() {
           <div className="space-y-6">
             <div className="bg-novo-gray p-6 rounded-lg">
               <h3 className="text-xl font-bold text-gray-900 mb-3">How long does the initial approval take?</h3>
-              <p className="text-gray-700">Most patients complete the assessment in 5 minutes and hear back from a doctor within 24 hours. If approved, your first shipment typically arrives within 3-5 business days.</p>
+              <p className="text-gray-700 leading-relaxed text-base">Most patients complete the assessment in 5 minutes and hear back from a doctor within 24 hours. If approved, your first shipment typically arrives within 3-5 business days.</p>
             </div>
             <div className="bg-novo-gray p-6 rounded-lg">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Do I need to visit a clinic?</h3>
-              <p className="text-gray-700">No. Everything is done online through our secure telehealth platform. Your consultation with the doctor is via video or phone call from wherever you're comfortable.</p>
+              <p className="text-gray-700 leading-relaxed text-base">No. Everything is done online through our secure telehealth platform. Your consultation with the doctor is via video or phone call from wherever you're comfortable.</p>
             </div>
             <div className="bg-novo-gray p-6 rounded-lg">
               <h3 className="text-xl font-bold text-gray-900 mb-3">What if I'm not approved?</h3>
-              <p className="text-gray-700">If GLP-1 treatment isn't right for you, your doctor will explain why and may suggest alternative weight loss approaches. You won't be charged if you're not approved.</p>
+              <p className="text-gray-700 leading-relaxed text-base">If GLP-1 treatment isn't right for you, your doctor will explain why and may suggest alternative weight loss approaches. You won't be charged if you're not approved.</p>
             </div>
           </div>
           <div className="text-center mt-12">
@@ -261,12 +261,12 @@ export default function HowWeWork() {
       <section className="py-20 bg-primary text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-6">Ready to get started?</h2>
-          <p className="text-xl mb-8 text-blue-100">
+          <p className="text-xl mb-8 text-white leading-relaxed max-w-3xl mx-auto">
             Take the first step towards your weight loss goals. Complete our quick assessment to see if you qualify.
           </p>
-          <Link 
-            href="/quiz" 
-            className="inline-block bg-white text-primary px-8 py-4 rounded-md font-semibold hover:bg-gray-100 transition text-lg"
+          <Link
+            href="/quiz"
+            className="inline-flex items-center justify-center gap-2 bg-white text-primary px-8 py-4 rounded-xl font-bold text-lg hover:shadow-2xl transition-all duration-300"
           >
             Check Your Eligibility
           </Link>

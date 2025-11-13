@@ -12,7 +12,7 @@ export const Step4CurrentMedications: React.FC<StepProps> = ({ formData, errors,
   return (
     <div className="space-y-6">
       <h2 className="text-3xl font-bold text-primary mb-4">Current Medications</h2>
-      <p className="text-gray-700 mb-8">
+      <p className="text-gray-900 mb-8">
         Please list any medications you're currently taking (optional). This helps our doctors assess compatibility.
       </p>
 
@@ -26,7 +26,7 @@ export const Step4CurrentMedications: React.FC<StepProps> = ({ formData, errors,
         error={errors.currentMedications}
       />
 
-      <p className="text-sm text-gray-600">
+      <p className="text-sm text-gray-900">
         {formData.currentMedications.length}/{MAX_MEDICATIONS_LENGTH} characters
       </p>
 

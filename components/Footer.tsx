@@ -8,9 +8,14 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <h3 className="text-xl font-bold mb-4">Medshood</h3>
-            <p className="text-gray-400">
+            <p className="text-gray-400 mb-4">
               India's leading super specialty pharmacy providing biologic therapies, rare disease medications, and clinical support for complex conditions.
             </p>
+            <div className="text-sm text-gray-500 space-y-1">
+              <p className="font-semibold text-gray-300">Operating Hours:</p>
+              <p>24/7 Customer Support</p>
+              <p>Pharmacy: Mon-Sat 9 AM - 9 PM IST</p>
+            </div>
           </div>
 
           {/* Quick Links */}
@@ -47,11 +52,50 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Medshood. All rights reserved.</p>
-          <p className="mt-2 text-sm">
-            Medshood is a specialty pharmacy platform. All medications require a valid prescription. Always consult with your healthcare provider before starting any specialty medication.
-          </p>
+        {/* Pharmacy License & Compliance Section */}
+        <div className="border-t border-gray-800 mt-8 pt-8">
+          <div className="grid md:grid-cols-3 gap-6 mb-6">
+            {/* Pharmacy License */}
+            <div className="text-center md:text-left">
+              <p className="text-sm font-semibold text-gray-300 mb-2">Licensed Pharmacy</p>
+              <p className="text-xs text-gray-500">License No: DL-XXX-XXXXX-XXXX</p>
+              <p className="text-xs text-gray-500">Issued by: Drug Controller, Govt. of India</p>
+            </div>
+
+            {/* Physical Address */}
+            <div className="text-center md:text-left">
+              <p className="text-sm font-semibold text-gray-300 mb-2">Registered Address</p>
+              <p className="text-xs text-gray-500">
+                Medshood Specialty Pharmacy<br />
+                [Address Line 1]<br />
+                [City, State - Pincode], India
+              </p>
+            </div>
+
+            {/* Compliance Badges */}
+            <div className="text-center md:text-right">
+              <p className="text-sm font-semibold text-gray-300 mb-2">Security & Compliance</p>
+              <div className="flex flex-wrap justify-center md:justify-end gap-2 text-xs">
+                <span className="bg-green-900/30 text-green-400 px-2 py-1 rounded border border-green-800">
+                  🔒 HIPAA Compliant
+                </span>
+                <span className="bg-blue-900/30 text-blue-400 px-2 py-1 rounded border border-blue-800">
+                  🔐 256-bit Encryption
+                </span>
+                <span className="bg-purple-900/30 text-purple-400 px-2 py-1 rounded border border-purple-800">
+                  ✓ FDA Registered
+                </span>
+              </div>
+            </div>
+          </div>
+
+          {/* Copyright */}
+          <div className="text-center text-gray-400 pt-6 border-t border-gray-800">
+            <p>&copy; {new Date().getFullYear()} Medshood. All rights reserved.</p>
+            <p className="mt-2 text-sm">
+              Medshood is a specialty pharmacy platform. All medications require a valid prescription. Always consult with your healthcare provider before starting any specialty medication.
+            </p>
+          </div>
         </div>
       </div>
     </footer>

@@ -53,12 +53,12 @@ export default function Contact() {
       <Header />
 
       {/* Hero Section */}
-      <section id="main-content" className="relative bg-gradient-to-br from-primary to-secondary text-white py-20 md:py-28">
+      <section id="main-content" className="relative bg-gradient-to-br from-primary to-primary-dark text-white py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
             Get in touch
           </h1>
-          <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+          <p className="text-xl text-white/95 max-w-3xl mx-auto">
             Have questions? We're here to help. Reach out to our team and we'll get back to you as soon as possible.
           </p>
         </div>
@@ -75,7 +75,7 @@ export default function Contact() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Email Us</h3>
-              <p className="text-gray-600 mb-4">For general inquiries</p>
+              <p className="text-gray-900 mb-4">For general inquiries</p>
               <a
                 href="mailto:support@medshood.com"
                 className="text-primary font-semibold hover:text-secondary transition-smooth"
@@ -91,7 +91,7 @@ export default function Contact() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Call Us</h3>
-              <p className="text-gray-600 mb-4">Mon-Fri, 9 AM - 6 PM IST</p>
+              <p className="text-gray-900 mb-4">Mon-Fri, 9 AM - 6 PM IST</p>
               <a
                 href="tel:+911800123456"
                 className="text-primary font-semibold hover:text-secondary transition-smooth"
@@ -107,7 +107,7 @@ export default function Contact() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Live Chat</h3>
-              <p className="text-gray-600 mb-4">Available 24/7</p>
+              <p className="text-gray-900 mb-4">Available 24/7</p>
               <button
                 className="text-primary font-semibold hover:text-secondary transition-smooth"
                 onClick={() => alert('Chat feature coming soon!')}
@@ -206,7 +206,7 @@ export default function Contact() {
               </form>
 
               <div className="mt-6 bg-blue-50 rounded-lg p-4">
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-gray-900">
                   <strong>Demo Note:</strong> This is a frontend prototype. The form doesn't currently send to a server. Backend API integration is documented in the project review reports.
                 </p>
               </div>
@@ -220,7 +220,7 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-primary mb-4">Our Office</h2>
-            <p className="text-xl text-gray-700">Visit us at our headquarters</p>
+            <p className="text-xl text-gray-900">Visit us at our headquarters</p>
           </div>
           <div className="max-w-3xl mx-auto bg-white p-8 rounded-lg card-shadow">
             <div className="flex items-start mb-6">
@@ -230,7 +230,7 @@ export default function Contact() {
               </svg>
               <div>
                 <h3 className="text-lg font-bold text-gray-900 mb-2">Address</h3>
-                <p className="text-gray-700">
+                <p className="text-gray-900">
                   Medshood Healthcare Pvt Ltd<br />
                   123 Residency Road<br />
                   Bangalore, Karnataka 560025<br />
@@ -244,7 +244,7 @@ export default function Contact() {
               </svg>
               <div>
                 <h3 className="text-lg font-bold text-gray-900 mb-2">Business Hours</h3>
-                <p className="text-gray-700">
+                <p className="text-gray-900">
                   Monday - Friday: 9:00 AM - 6:00 PM IST<br />
                   Saturday: 10:00 AM - 4:00 PM IST<br />
                   Sunday: Closed

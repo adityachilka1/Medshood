@@ -108,11 +108,12 @@ export const HomeDeliveryIcon: React.FC<IconProps> = ({ className = "w-12 h-12",
   </svg>
 );
 
+// Multiple Sclerosis - Brain/Neuron Icon
 export const TargetIcon: React.FC<IconProps> = ({ className = "w-12 h-12", size }) => (
   <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
-    <circle cx="12" cy="12" r="10" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
-    <circle cx="12" cy="12" r="6" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
-    <circle cx="12" cy="12" r="2" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" fill="currentColor" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3C8 3 5 6 5 9c0 2 1 3 2 4 .5.5.5 1 .5 1.5 0 1.5-1 2.5-1.5 3.5-.5 1-.5 2 0 3C7 22 9 22 10 21c.5-.5 1-1 1.5-1.5.5-.5 1-.5 1.5 0 .5.5 1 1 1.5 1.5 1 1 3 1 4 0 .5-1 .5-2 0-3-.5-1-1.5-2-1.5-3.5 0-.5 0-1 .5-1.5 1-1 2-2 2-4 0-3-3-6-7-6z" />
+    <circle cx="12" cy="9" r="2" strokeWidth={1.5} fill="currentColor" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6M10 15h4" />
   </svg>
 );
 
@@ -130,40 +131,77 @@ export const MoneyBackIcon: React.FC<IconProps> = ({ className = "w-12 h-12", si
 
 // Medical Condition Category Icons
 
+// Rheumatology - Antibody/Joint Icon
+export const RheumatologyIcon: React.FC<IconProps> = ({ className = "w-12 h-12", size }) => (
+  <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 2C10.5 2 9 3 9 4.5V8c0 .5-.5 1-1 1H4.5C3 9 2 10.5 2 12s1 3 2.5 3H8c.5 0 1 .5 1 1v3.5c0 1.5 1.5 2.5 3 2.5s3-1 3-2.5V16c0-.5.5-1 1-1h3.5c1.5 0 2.5-1.5 2.5-3s-1-3-2.5-3H16c-.5 0-1-.5-1-1V4.5C15 3 13.5 2 12 2z" />
+    <circle cx="12" cy="12" r="2" strokeWidth={2} fill="currentColor" />
+  </svg>
+);
+
+// Diabetes - Glucose/Insulin Pen Icon
 export const DiabetesIcon: React.FC<IconProps> = ({ className = "w-12 h-12", size }) => (
   <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3l6 18M15 3l-6 18" />
+    <circle cx="8" cy="8" r="2.5" strokeWidth={2} />
+    <circle cx="16" cy="8" r="2.5" strokeWidth={2} />
+    <circle cx="8" cy="16" r="2.5" strokeWidth={2} />
+    <circle cx="16" cy="16" r="2.5" strokeWidth={2} />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 8h4M10 16h4" />
   </svg>
 );
 
+// Rare Diseases - DNA/Genetic Icon
 export const HeartIcon: React.FC<IconProps> = ({ className = "w-12 h-12", size }) => (
   <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v18M15 3v18" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 6h6M9 9h6M9 12h6M9 15h6M9 18h6" />
+    <circle cx="9" cy="6" r="1.5" fill="currentColor" />
+    <circle cx="15" cy="6" r="1.5" fill="currentColor" />
+    <circle cx="9" cy="12" r="1.5" fill="currentColor" />
+    <circle cx="15" cy="12" r="1.5" fill="currentColor" />
+    <circle cx="9" cy="18" r="1.5" fill="currentColor" />
+    <circle cx="15" cy="18" r="1.5" fill="currentColor" />
   </svg>
 );
 
+// Cancer Care - Cancer Cell Icon
 export const CancerRibbonIcon: React.FC<IconProps> = ({ className = "w-12 h-12", size }) => (
   <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-    <circle cx="12" cy="12" r="3" strokeWidth={2} />
+    <circle cx="12" cy="12" r="5" strokeWidth={2} />
+    <circle cx="12" cy="12" r="2" strokeWidth={1.5} fill="currentColor" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 7v-3M12 20v-3M17 12h3M4 12h3" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16.24 7.76l2.12-2.12M5.64 18.36l2.12-2.12M16.24 16.24l2.12 2.12M5.64 5.64l2.12 2.12" />
   </svg>
 );
 
+// Hemophilia - Blood Droplet Icon
 export const KidneyIcon: React.FC<IconProps> = ({ className = "w-12 h-12", size }) => (
   <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 2.5c-1.5 2-3 4.5-4 7-1 2.5-1 5.5.5 7.5C10 19 11 19.5 12 19.5s2-.5 3.5-2.5c1.5-2 1.5-5 .5-7.5-1-2.5-2.5-5-4-7z" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 10c.5 1 1 2 1 3.5 0 1-.5 1.5-1 1.5s-1-.5-1-1.5c0-1.5.5-2.5 1-3.5z" fill="currentColor" />
   </svg>
 );
 
+// IBD - Intestines/Digestive Icon
 export const LungsIcon: React.FC<IconProps> = ({ className = "w-12 h-12", size }) => (
   <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 4h4c2 0 3 1 3 3v3c0 1.5-1 2.5-2.5 2.5h-1c-1 0-2 .5-2 1.5v3c0 2 1 3 3 3h3" />
+    <circle cx="8" cy="4" r="1.5" strokeWidth={2} fill="currentColor" />
+    <circle cx="16" cy="10" r="1" strokeWidth={1.5} />
+    <circle cx="11.5" cy="14" r="1" strokeWidth={1.5} />
+    <circle cx="17" cy="20" r="1.5" strokeWidth={2} fill="currentColor" />
   </svg>
 );
 
+// Growth Disorders - Growth Chart/Hormone Icon
 export const BrainIcon: React.FC<IconProps> = ({ className = "w-12 h-12", size }) => (
   <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v18M4 21h16" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 15l3-3 3 3M9 10l3-3 3 3" />
+    <circle cx="12" cy="6" r="1.5" fill="currentColor" />
+    <circle cx="12" cy="12" r="1.5" fill="currentColor" />
+    <circle cx="12" cy="18" r="1.5" fill="currentColor" />
   </svg>
 );
 
