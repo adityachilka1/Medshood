@@ -2,9 +2,12 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { Search, Filter, Shield, Snowflake, Phone, ChevronRight } from 'lucide-react';
+import { Search, Filter, Shield, Snowflake, Phone, ChevronRight, ShoppingCart, Check } from 'lucide-react';
+import { useCart } from '@/contexts/CartContext';
+import { growthDisordersProducts } from '@/lib/data/products';
 
 interface Medicine {
   id: string;
@@ -12,109 +15,54 @@ interface Medicine {
   brandName: string;
   indication: string;
   dosageForm: string;
-  price?: string;
-  coldChain?: boolean;
+  price: number | null;
+  priceDisplay: string;
+  coldChain: boolean;
   category: string;
+  imageUrl?: string;
 }
 
-const growthDisorderMedicines: Medicine[] = [
-  {
-    id: 'growth-001',
-    genericName: 'Somatropin (rDNA)',
-    brandName: 'Genotropin / Norditropin / Humatrope',
-    indication: 'Growth Hormone Deficiency, Turner Syndrome, Chronic Renal Insufficiency',
-    dosageForm: 'Subcutaneous Injection (Cartridge/Pen)',
-    coldChain: true,
-    category: 'Growth Hormone'
-  },
-  {
-    id: 'growth-002',
-    genericName: 'Somatropin',
-    brandName: 'Omnitrope',
-    indication: 'Growth Hormone Deficiency in Children and Adults',
-    dosageForm: 'Subcutaneous Injection 5mg/10mg',
-    coldChain: true,
-    category: 'Growth Hormone'
-  },
-  {
-    id: 'growth-003',
-    genericName: 'Somatropin',
-    brandName: 'Saizen',
-    indication: 'Pediatric Growth Hormone Deficiency, Turner Syndrome',
-    dosageForm: 'Subcutaneous Injection (Click.easy)',
-    coldChain: true,
-    category: 'Growth Hormone'
-  },
-  {
-    id: 'growth-004',
-    genericName: 'Somatrogon',
-    brandName: 'Ngenla',
-    indication: 'Pediatric Growth Hormone Deficiency (Weekly Dosing)',
-    dosageForm: 'Subcutaneous Injection 24mg/60mg',
-    coldChain: true,
-    category: 'Long-Acting Growth Hormone'
-  },
-  {
-    id: 'growth-005',
-    genericName: 'Lonapegsomatropin',
-    brandName: 'Skytrofa',
-    indication: 'Pediatric Growth Hormone Deficiency (Weekly)',
-    dosageForm: 'Subcutaneous Injection',
-    coldChain: true,
-    category: 'Long-Acting Growth Hormone'
-  },
-  {
-    id: 'growth-006',
-    genericName: 'Mecasermin',
-    brandName: 'Increlex',
-    indication: 'Severe Primary IGF-1 Deficiency, Laron Syndrome',
-    dosageForm: 'Subcutaneous Injection 10mg/mL',
-    coldChain: true,
-    category: 'IGF-1 Analog'
-  },
-  {
-    id: 'growth-007',
-    genericName: 'Letrozole',
-    brandName: 'Femara',
-    indication: 'Short Stature in Boys (Off-label)',
-    dosageForm: 'Tablet 2.5mg',
-    category: 'Aromatase Inhibitor'
-  },
-  {
-    id: 'growth-008',
-    genericName: 'Oxandrolone',
-    brandName: 'Oxandrin',
-    indication: 'Turner Syndrome, Constitutional Delay of Growth',
-    dosageForm: 'Tablet 2.5mg/10mg',
-    category: 'Anabolic Steroid'
-  },
-  {
-    id: 'growth-009',
-    genericName: 'Somatropin Biosimilar',
-    brandName: 'Zomacton',
-    indication: 'Growth Hormone Deficiency',
-    dosageForm: 'Subcutaneous Injection 5mg/10mg',
-    coldChain: true,
-    category: 'Growth Hormone Biosimilar'
-  },
-  {
-    id: 'growth-010',
-    genericName: 'Testosterone',
-    brandName: 'Androgel / Testim',
-    indication: 'Hypogonadism, Delayed Puberty in Boys',
-    dosageForm: 'Topical Gel 1% / Injection',
-    category: 'Androgen Replacement'
-  }
-];
+// Convert shared products to frontend Medicine format
+const growthDisorderMedicines: Medicine[] = growthDisordersProducts.map(p => ({
+  id: p.id,
+  genericName: p.genericName,
+  brandName: p.brandName,
+  indication: p.indication,
+  dosageForm: p.dosageForm,
+  price: p.price,
+  priceDisplay: p.priceDisplay,
+  coldChain: p.coldChain,
+  category: p.category,
+  imageUrl: p.imageUrl,
+}));
 
 export default function GrowthDisordersPage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedFilter, setSelectedFilter] = useState<string>('all');
   const [mounted, setMounted] = useState(false);
+  const [addedToCart, setAddedToCart] = useState<string | null>(null);
+  const { addItem } = useCart();
 
   React.useEffect(() => {
     setMounted(true);
   }, []);
+
+  const handleAddToCart = (medicine: Medicine) => {
+    if (!medicine.price) return;
+
+    addItem({
+      id: medicine.id,
+      name: medicine.brandName,
+      genericName: medicine.genericName,
+      price: medicine.price,
+      imageUrl: medicine.imageUrl,
+      coldChain: medicine.coldChain,
+      requiresPrescription: true,
+    });
+
+    setAddedToCart(medicine.id);
+    setTimeout(() => setAddedToCart(null), 2000);
+  };
 
   const filteredMedicines = growthDisorderMedicines.filter(medicine => {
     const matchesSearch =
@@ -153,7 +101,7 @@ export default function GrowthDisordersPage() {
               Growth Hormone Therapy
             </h1>
             <p className="text-xl md:text-2xl max-w-3xl opacity-95">
-              Growth hormones including daily for pediatric and adult growth hormone deficiency and weekly formulas
+              Genotropin GoQuick (Pfizer) - premium recombinant human growth hormone for pediatric and adult growth hormone deficiency with WHO-GDP certified cold chain delivery
             </p>
           </div>
 
@@ -184,19 +132,11 @@ export default function GrowthDisordersPage() {
               <span>Filter:</span>
             </div>
             <div className="flex gap-2 flex-wrap">
-              {['all', 'growth-hormone', 'long-acting', 'oral'].map((filter) => (
-                <button
-                  key={filter}
-                  onClick={() => setSelectedFilter(filter)}
-                  className={`px-4 py-2 rounded-lg font-medium transition-all ${
-                    selectedFilter === filter
-                      ? 'bg-orange-600 text-white shadow-md'
-                      : 'bg-gray-100 text-gray-900 hover:bg-gray-200'
-                  }`}
-                >
-                  {filter === 'growth-hormone' ? 'Growth Hormone' : filter === 'long-acting' ? 'Long-Acting' : filter.charAt(0).toUpperCase() + filter.slice(1)}
-                </button>
-              ))}
+              <button
+                className="px-4 py-2 rounded-lg font-medium transition-all bg-orange-600 text-white shadow-md"
+              >
+                All
+              </button>
             </div>
             <div className="ml-auto text-sm text-gray-900">
               <span className="font-semibold">{filteredMedicines.length}</span> medicines found
@@ -223,6 +163,25 @@ export default function GrowthDisordersPage() {
                   }`}
                   style={{ animationDelay: `${index * 0.05}s` }}
                 >
+                  {/* Product Image */}
+                  {medicine.imageUrl && (
+                    <div className="relative h-48 bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center p-4">
+                      <Image
+                        src={medicine.imageUrl}
+                        alt={medicine.brandName}
+                        width={120}
+                        height={180}
+                        className="object-contain max-h-40"
+                      />
+                      {medicine.coldChain && (
+                        <div className="absolute top-3 right-3 flex items-center gap-1 bg-blue-100 text-blue-700 px-2 py-1 rounded-full text-xs">
+                          <Snowflake className="w-3 h-3" />
+                          <span>Cold Chain</span>
+                        </div>
+                      )}
+                    </div>
+                  )}
+
                   {/* Medicine Header */}
                   <div className="bg-gradient-to-br from-orange-500 to-orange-600 p-6 text-white">
                     <div className="flex items-start justify-between mb-3">
@@ -230,7 +189,7 @@ export default function GrowthDisordersPage() {
                         <h3 className="text-xl font-bold mb-1">{medicine.genericName}</h3>
                         <p className="text-orange-50 text-sm font-medium">{medicine.brandName}</p>
                       </div>
-                      {medicine.coldChain && (
+                      {!medicine.imageUrl && medicine.coldChain && (
                         <div className="ml-2 bg-white/20 backdrop-blur-sm p-2 rounded-lg border border-white/30">
                           <Snowflake className="w-5 h-5" />
                         </div>
@@ -274,16 +233,49 @@ export default function GrowthDisordersPage() {
                       )}
 
                       <div className="pt-2">
-                        <Link
-                          href="/upload-prescription"
-                          className="w-full flex items-center justify-center gap-2 bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-700 transition-all duration-300 shadow-md hover:shadow-lg"
-                        >
-                          <Phone className="w-4 h-4" />
-                          Request Quote
-                        </Link>
-                        <p className="text-xs text-gray-500 text-center mt-2">
-                          Prescription required
-                        </p>
+                        {medicine.price ? (
+                          <>
+                            <div className="flex items-center justify-between mb-3">
+                              <span className="text-2xl font-bold text-gray-900">{medicine.priceDisplay}</span>
+                            </div>
+                            <button
+                              onClick={() => handleAddToCart(medicine)}
+                              className={`w-full flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all duration-300 shadow-md hover:shadow-lg ${
+                                addedToCart === medicine.id
+                                  ? 'bg-green-600 text-white'
+                                  : 'bg-orange-600 text-white hover:bg-orange-700'
+                              }`}
+                            >
+                              {addedToCart === medicine.id ? (
+                                <>
+                                  <Check className="w-4 h-4" />
+                                  Added to Cart
+                                </>
+                              ) : (
+                                <>
+                                  <ShoppingCart className="w-4 h-4" />
+                                  Add to Cart
+                                </>
+                              )}
+                            </button>
+                            <p className="text-xs text-gray-500 text-center mt-2">
+                              Prescription required
+                            </p>
+                          </>
+                        ) : (
+                          <>
+                            <Link
+                              href="/upload-prescription"
+                              className="w-full flex items-center justify-center gap-2 bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-700 transition-all duration-300 shadow-md hover:shadow-lg"
+                            >
+                              <Phone className="w-4 h-4" />
+                              Request Quote
+                            </Link>
+                            <p className="text-xs text-gray-500 text-center mt-2">
+                              Prescription required
+                            </p>
+                          </>
+                        )}
                       </div>
                     </div>
                   </div>
