@@ -103,7 +103,7 @@ async function validateCSRFToken(request: Request): Promise<{
  * Routes that require authentication
  */
 const PROTECTED_ROUTES = [
-  '/dashboard',
+  // '/dashboard', // TEMPORARILY DISABLED for development - re-enable before production!
   '/api/dashboard',
   '/api/patients',
   '/api/prescriptions', // SECURITY FIX: Prescriptions contain PHI and must be protected
